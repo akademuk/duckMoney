@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.2/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Кача Гроші</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="hamburger">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <p>Меню</p>
+            </div>
+            <div class="logotype">
+                <a href="#">
+                    <img src="img/logo.png" alt="Кача Гроші">
+                </a>
+            </div>
+            <div class="headerLeftContact">
+                <div class="headerLeftNumber">
+                    <a href="#">0 (800) 753-363</a>
+                    <button>
+                        <img src="img/sr-information.svg" alt="information">
+                    </button>
+                </div>
+                <div class="headerLeftAuthorization">
+                    <button>Погасить</button>
+                    <button>Вхід</button>
+                </div>
+            </div>
+            <button class="loginBtnMobile">
+                <img src="img/LogIn.svg" alt="LogIn">
+            </button>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="#">Головна</a>
+                </li>
+                <li>
+                    <a href="#">Про Нас</a>
+                </li>
+                <li>
+                    <a href="#">Як Отримати</a>
+                </li>
+                <li>
+                    <a href="#">Як подовжити</a>
+                </li>
+                <li>
+                    <a href="#">Як Погасити</a>
+                </li>
+                <li>
+                    <a href="#">Новини та акції</a>
+                </li>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+            </ul>
+            <div class="menuLanguage">
+                <select name="" id=""></select>
+            </div>
+            <div class="menuMobile">
+                <div class="menuMobileBtn">
+                    <button>Оформити кредит</button>
+                    <button>Погасить кредит</button>
+                </div>
+                <div class="menuMobileFlex">
+                    <div class="menuMobileFlexLeft">
+                        <p>Контакти:</p>
+                        <ul>
+                            <li>
+                                <a href="tel:097-369-41-11">097 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:095-369-41-11">095 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:063-369-41-11">063-369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:800-312-727">0 800 312-727</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@kachay.com.ua">info@kachay.com.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuMobileFlexRight">
+                        <p>Ми в мережі:</p>
+                        <ul class="menuMobileFlexRightSocial">
+                            <li>
+                                <a href="#">
+                                    <img src="img/Facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/Instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/Subtract.svg" alt="Subtract">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="menuLanguage">
+                            <select name="" id=""></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="bannerPrev">
+            <img src="img/prev.svg" alt="prev">
+        </div>
+        <div class="wrapper">
+            <div class="bannerSlider">
+                <div class="bannerSliderItem">
+                    <div class="bannerSliderWrapperLeft">
+                        <img src="img/duckBannerPage.png" alt="Кача Гроші">
+                        <div class="bannerSliderItemDialog">
+                            <h1>Швидкий кредит онлайн від Кача Гроші</h1>
+                        </div>
+                    </div>
+                    <div class="bannerSliderWrapperRight">
+                        <div class="calculator">
+                            <h2>0,01% НОВИМ КЛІЄНТАМ</h2>
+                            <form class="calculatorSection">
+                                <div class="calculatorContainer">
+                                    <div class="calculatorContainerTop">
+                                        <label for="loan-amount">Сума:</label>
+                                        <span id="loan-amount-value">150 грн</span>
+                                    </div>
+                                    <div class="rangeContainer">
+                                        <p id="mine">
+                                            <img src="img/mine.svg" alt="mine">
+                                        </p>
+                                        <input type="range" id="loan-amount" min="150" max="15000" step="50"
+                                            value="150">
+                                        <p id="plus">
+                                            <img src="img/plus.svg" alt="plus">
+                                        </p>
+                                    </div>
+                                    <div class="calculatorContainerBottom calculatorContainerBottom2">
+                                        <p>150 грн</p>
+                                        <p>15 000 грн</p>
+                                    </div>
+                                </div>
+                                <div class="calculatorContainer">
+                                    <div class="calculatorContainerTop">
+                                        <label for="loan-duration">Термін:</label>
+                                        <span id="loan-duration-value">1 дн.</span>
+                                    </div>
+                                    <div class="rangeContainer">
+                                        <p id="mineDate">
+                                            <img src="img/mine.svg" alt="mine">
+                                        </p>
+                                        <input type="range" id="loan-duration" min="1" max="30" step="1" value="1">
+                                        <p id="plusDate">
+                                            <img src="img/plus.svg" alt="plus">
+                                        </p>
+                                    </div>
+                                    <div class="calculatorContainerBottom">
+                                        <p>1 день</p>
+                                        <p>30 днів</p>
+                                    </div>
+                                </div>
+                                <div id="result">
+                                    <div class="resultSum">
+                                        <p>Сумма:</p>
+                                        <span id=" "></span>
+                                    </div>
+                                    <div class="resultSum">
+                                        <p>Плата за кредит:</p>
+                                        <span id="percent"></span>
+                                    </div>
+                                    <div class="resultSum">
+                                        <p>Сума погашення на <span id="resultDate"></span></p>
+                                        <span id="resultSum"></span>
+                                    </div>
+                                </div>
+                                <div class="calculatorBtn">
+                                    <input type="submit" value="Оформити кредит">
+                                    <a href="#">Я маю промокод</a>
+                                </div>
+                                <div class="calculatorSectionNBU">
+                                    Цей віджет не є кредитним калькулятором у розумінні постанови правління НБУ від
+                                    05.10.2021 №100 та відображає умови кредитування протягом пільгового періоду (до 30
+                                    днів). Повну інформацію про загальні умови кредитування дивіться тут, персональні -
+                                    в договорі.Джерело: <a href="https://kachay.com.ua/©">https://kachay.com.ua/©</a>
+                                    Кача гроші Кредит онлайн
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bannerSliderItem">
+                    
+                </div>
+
+                <div class="bannerSliderItem">
+                  
+                </div>
+
+                <div class="bannerSliderItem">
+                   
+                </div>
+
+                <div class="bannerSliderItem">
+                
+                </div>
+            </div>
+        </div>
+        <div class="bannerDots"></div>
+        <div class="bannerNext">
+            <img src="img/next.svg" alt="next">
+        </div>
+    </div>
+
+    <div class="whyKacha">
+        <div class="wrapper">
+            <h2>Чому Кача Гроші?</h2>
+            <div class="whyKachaContainer">
+                <div class="whyKachaContainerSection">
+                   <img src="img/whyKacha1.png" alt="Швидка обробка заявки">
+                   <h3>Швидка обробка заявки</h3>
+                </div>
+                <div class="whyKachaContainerSection">
+                    <img src="img/whyKacha2.png" alt="Немає поручителів">
+                    <h3>Немає поручителів</h3>
+                 </div>
+                 <div class="whyKachaContainerSection">
+                    <img src="img/whyKacha3.png" alt="Знижено процентну ставку">
+                    <h3>Знижено процентну ставку</h3>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="WhatRequired">
+        <div class="wrapper">
+            <h2>Що потрібно для оформлення кредиту?</h2>
+            <div class="WhatRequiredContainer">
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/WhatRequired1.png" alt="Банківська карта">
+                    </div>
+                    <h3>Банківська карта</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/WhatRequired2.png" alt="Бути старше 18 років">
+                    </div>
+                    <h3>Бути старше 18 років</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/WhatRequired3.png" alt="Паспорт та ІПН">
+                    </div>
+                    <h3>Паспорт та ІПН</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/WhatRequired4.png" alt="Телефон і email">
+                    </div>
+                    <h3>Телефон і email</h3>
+                </div>
+            </div>
+            <a href="#">Оформити кредит</a>
+        </div>
+    </div>
+    
+    <div class="loanOnline">
+        <div class="wrapper">
+            <h2>Як отримати кредит онлайн?</h2>
+            <div class="loanOnlineContainer">
+                <div class="loanOnlineContainerSection">
+                    <img src="img/loanOnline1.png" alt="Яку ж суму вказати?">
+                    <div class="loanOnlineContainerText">
+                        <div class="loanOnlineContainerTextLeft">
+                            <p>Крок:</p>
+                            <span>01</span>
+                        </div>
+                        <div class="loanOnlineContainerTextRight">
+                            <h4>Вкажіть суму і термін</h4>
+                            <span>На головній сторінці сайту введіть суму і термін вашого кредиту.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="loanOnlineContainerSection">
+                    <img src="img/loanOnline2.png" alt="Заповніть заявку" class="desctoploanOnline">
+                    <img src="img/loanMobile.png" alt="Заповніть заявку" class="mobileloanOnline">
+                    <div class="loanOnlineContainerText">
+                        <div class="loanOnlineContainerTextLeft">
+                            <p>Крок:</p>
+                            <span>02</span>
+                        </div>
+                        <div class="loanOnlineContainerTextRight">
+                            <h4>Заповніть заявку</h4>
+                            <span>Процес займає 8 хвилин при першому зверненні і 2 хвилини - при повторному.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="loanOnlineContainerSection">
+                    <img src="img/loanOnline3.png" alt="Ось можна і пошопитися!">
+                    <div class="loanOnlineContainerText">
+                        <div class="loanOnlineContainerTextLeft">
+                            <p>Крок:</p>
+                            <span>03</span>
+                        </div>
+                        <div class="loanOnlineContainerTextRight">
+                            <h4>Отримайте гроші</h4>
+                            <span>Після всіх процедур гроші будуть зараховані на вашу карту миттєво.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="WhatRequired howRepay">
+        <div class="wrapper">
+            <h2>Як погасити кредит?</h2>
+            <div class="WhatRequiredContainer">
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/WhatRequired1.png" alt="Оплата картою">
+                    </div>
+                    <h3>Оплата картою</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/howRepay2.png" alt="Платіжний термінал">
+                    </div>
+                    <h3>Платіжний термінал</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/howRepay3.png" alt="Оплата онлайн">
+                    </div>
+                    <h3>Оплата онлайн</h3>
+                </div>
+
+                <div class="WhatRequiredContainerSection">
+                    <div class="WhatRequiredContainerSectionImg">
+                        <img src="img/howRepay4.png" alt="Банківський переказ">
+                    </div>
+                    <h3>Банківський переказ</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="reviewsPrev">
+            <img src="img/prev.svg" alt="prev">
+        </div>
+        <div class="wrapper">
+            <h2>Відгуки</h2>
+            <div class="reviewsSlider">
+                <div class="reviewsSliderItem">
+                    <div class="reviewsSliderItemImg">
+                        <img src="img/“.svg" alt="“">
+                        <img src="img/reiting.png" alt="Відгуки">
+                    </div>
+                    <div class="reviewsSliderItemText">
+                        “Отличная компания. Оперативно обслуживают, нет возрастных ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии. Часто бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!”
+                    </div>
+                    <div class="reviewsSliderItemContainer">
+                        <img src="img/avatar.png" alt="Вікторія Степова">
+                        <h5>Вікторія Степова</h5>
+                    </div>
+                    <a href="#" class="reviewsLink">Усі відгуки</a>
+                </div>
+
+                <div class="reviewsSliderItem">
+                    <div class="reviewsSliderItemImg">
+                        <img src="img/“.svg" alt="“">
+                        <img src="img/reiting.png" alt="Відгуки">
+                    </div>
+                    <div class="reviewsSliderItemText">
+                        “Отличная компания. Оперативно обслуживают, нет возрастных ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии. Часто бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!”
+                    </div>
+                    <div class="reviewsSliderItemContainer">
+                        <img src="img/avatar.png" alt="Вікторія Степова">
+                        <h5>Вікторія Степова</h5>
+                    </div>
+                    <a href="#" class="reviewsLink">Усі відгуки</a>
+                </div>
+
+                <div class="reviewsSliderItem">
+                    <div class="reviewsSliderItemImg">
+                        <img src="img/“.svg" alt="“">
+                        <img src="img/reiting.png" alt="Відгуки">
+                    </div>
+                    <div class="reviewsSliderItemText">
+                        “Отличная компания. Оперативно обслуживают, нет возрастных ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии. Часто бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!”
+                    </div>
+                    <div class="reviewsSliderItemContainer">
+                        <img src="img/avatar.png" alt="Вікторія Степова">
+                        <h5>Вікторія Степова</h5>
+                    </div>
+                    <a href="#" class="reviewsLink">Усі відгуки</a>
+                </div>
+
+                <div class="reviewsSliderItem">
+                    <div class="reviewsSliderItemImg">
+                        <img src="img/“.svg" alt="“">
+                        <img src="img/reiting.png" alt="Відгуки">
+                    </div>
+                    <div class="reviewsSliderItemText">
+                        “Отличная компания. Оперативно обслуживают, нет возрастных ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии. Часто бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!”
+                    </div>
+                    <div class="reviewsSliderItemContainer">
+                        <img src="img/avatar.png" alt="Вікторія Степова">
+                        <h5>Вікторія Степова</h5>
+                    </div>
+                    <a href="#" class="reviewsLink">Усі відгуки</a>
+                </div>
+
+                <div class="reviewsSliderItem">
+                    <div class="reviewsSliderItemImg">
+                        <img src="img/“.svg" alt="“">
+                        <img src="img/reiting.png" alt="Відгуки">
+                    </div>
+                    <div class="reviewsSliderItemText">
+                        “Отличная компания. Оперативно обслуживают, нет возрастных ограничений, что очень выручает одиноких пенсионеров, которые выживают от пенсии к пенсии. Часто бывают хорошие скидки по промокодам. Спасибо за помощь в трудную минуту! Успехов вам!”
+                    </div>
+                    <div class="reviewsSliderItemContainer">
+                        <img src="img/avatar.png" alt="Вікторія Степова">
+                        <h5>Вікторія Степова</h5>
+                    </div>
+                    <a href="#" class="reviewsLink">Усі відгуки</a>
+                </div>
+            </div>
+        </div>
+        <div class="reviewsDots"></div>
+        <div class="reviewsNext">
+            <img src="img/next.svg" alt="next">
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="wrapper">
+            <h2>Новини та акції</h2>
+            <div class="newsContainer">
+                <div class="newsContainerSection">
+                    <img src="img/news1.png" alt="Міжнародний день щастя">
+                    <h3>Міжнародний день щастя</h3>
+                    <div class="newsContainerSectionText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. 
+                    </div>
+                    <div class="newsContainerSectionDate">
+                        <a href="#">Детальніше</a>
+                        <span>18.03.2023</span>
+                    </div>
+                </div>
+                <div class="newsContainerSection">
+                    <img src="img/news2.png" alt="Українські добровольці!!">
+                    <h3>Українські добровольці!!</h3>
+                    <div class="newsContainerSectionText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. 
+                    </div>
+                    <div class="newsContainerSectionDate">
+                        <a href="#">Детальніше</a>
+                        <span>18.03.2023</span>
+                    </div>
+                </div>
+                <div class="newsContainerSection">
+                    <img src="img/news3.png" alt="Міжнародний день щастя">
+                    <h3>Потрібні гроші? знижка до 60%</h3>
+                    <div class="newsContainerSectionText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту.
+                    </div>
+                    <div class="newsContainerSectionDate">
+                        <a href="#">Детальніше</a>
+                        <span>18.03.2023</span>
+                    </div>
+                </div>
+            </div>
+            <div class="newsNavigation">
+                <div class="newsPrev">
+                    <img src="img/prev.svg" alt="prev">
+                </div>
+                <div class="newsDots"></div>
+                <div class="newsNext">
+                    <img src="img/next.svg" alt="next">
+                </div>
+            </div>
+            <a href="#">Усі новини та акції</a>
+        </div>
+    </div>
+
+    <div class="information">
+        <div class="wrapper">
+            <h2>Онлайн кредит на картку від Кача гроші – фінансова допомога швидко та просто</h2>
+            <div class="informationContainer">
+                <div class="informationScroll" id="informationScroll">
+                    <h6>1. О компании</h6>
+                    <div class="informationScrollText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету. Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать договор с помощью SMS кода. <br>
+                        Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые, смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без отказа.
+                    </div>
+                    <h5>2. Причины, по которым украинцы выбирают</h5>
+                    <h6>2.1 — Выгодные условия</h6>
+                    <div class="informationScrollText">
+                        Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.
+                    </div>
+                    <h6>1. О компании</h6>
+                    <div class="informationScrollText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету. Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать договор с помощью SMS кода. <br>
+                        Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые, смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без отказа.
+                    </div>
+                    <h5>2. Причины, по которым украинцы выбирают</h5>
+                    <h6>2.1 — Выгодные условия</h6>
+                    <div class="informationScrollText">
+                        Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.
+                    </div>
+                    <h6>1. О компании</h6>
+                    <div class="informationScrollText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету. Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать договор с помощью SMS кода. <br>
+                        Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые, смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без отказа.
+                    </div>
+                    <h5>2. Причины, по которым украинцы выбирают</h5>
+                    <h6>2.1 — Выгодные условия</h6>
+                    <div class="informationScrollText">
+                        Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.
+                    </div>
+                    <h6>1. О компании</h6>
+                    <div class="informationScrollText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету. Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать договор с помощью SMS кода. <br>
+                        Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые, смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без отказа.
+                    </div>
+                    <h5>2. Причины, по которым украинцы выбирают</h5>
+                    <h6>2.1 — Выгодные условия</h6>
+                    <div class="informationScrollText">
+                        Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.
+                    </div>
+                    <h6>1. О компании</h6>
+                    <div class="informationScrollText">
+                        Кача гроші – финансовая компания, предоставляющая услуги онлайн кредитования с выплатой денег на банковскую карту. Уникальные технические решения позволяют пользоваться интернет-сервисом круглосуточно. Каждый украинец может взять кредит за несколько минут, заполнив простую анкету. Для этого нужно выбрать необходимую сумму и срок, затем дождаться решение по заявке, и подписать договор с помощью SMS кода. <br>
+                        Мы кредитуем заемщиков с любой кредитной историей. Те, кто пользуется нашим сервисом впервые, смогут воспользоваться льготными условиями оформления с процентной ставкой 0,01% в день. Не упустите возможность получить необходимую финансовую помощь в любой ситуации, в любое время, без отказа.
+                    </div>
+                    <h5>2. Причины, по которым украинцы выбирают</h5>
+                    <h6>2.1 — Выгодные условия</h6>
+                    <div class="informationScrollText">
+                        Первый займ беспроцентный, ставка 0,01%. В дальнейшем, процентная ставка по кредиту увеличивается, но, благодаря персональной системе скидок, стоимость займа будет меньше, чем в других компаниях. Деньги предоставляются на любые цели без ограничений.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutLoans">
+        <div class="wrapper">
+            <h2>Про кредити</h2>
+            <div class="aboutLoansContainer">
+                <div class="aboutLoansContainerSection">
+                    <h3>Приклад розрахунку процентної ставки</h3>
+                    <div class="aboutLoansContainerSectionText">
+                        Например, сумма займа составляет <b>1000 грн.</b>, Срок возврата кредита - <b>10</b> календарных дней, сумма к выплате на дату возврата - <b>2500 грн</b>. В данном случае типичная летняя APR - <b>912.5%</b>.
+                    </div>
+                </div>
+
+                <div class="aboutLoansContainerSection">
+                    <h3>Мінімальна і максимальна сума позики</h3>
+                    <div class="aboutLoansContainerSectionText">
+                        Минимальная сумма кредита для нового клиента сервиса EuroGroshi составляет <b>1000 грн.</b>, А максимальная - <b>10000 грн</b>. Для постоянных клиентов сервиса предусмотрено увеличение возможной суммы кредитования
+                    </div>
+                </div>
+
+                <div class="aboutLoansContainerSection">
+                    <h3>Термін користування послугами кредитування</h3>
+                    <div class="aboutLoansContainerSectionText">
+                        Минимальный срок пользования услугой кредитования составляет <b>1 день</b>. Максимальный срок пользования услугой кредитования до <b>30 дней</b>. В случае активации услуги пролонгации, срок может быть увеличен
+                    </div>
+                </div>
+            </div>
+            <a href="#">Оформити кредит</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerTop">
+            <div class="wrapper">
+                <div class="footerLogo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="footerTopSearch">
+                    <div class="footerTopSearchPositon">
+                        <input type="search" name="" id="" placeholder="Пошук">
+                        <input type="submit" class="submit" value="Пошук">
+                    </div>
+                </div>
+                <div class="footerTopContainer">
+                    <div class="footerTopContainerNavigation">
+                        <div class="footerTopContainerNavigationImg">
+                            <img src="img/footerTopContainerNavigationImg1.png" alt="Про нас">
+                        </div>
+                        <ul>
+                            <li class="footerNavBold">
+                                Про нас:
+                            </li>
+                            <li>
+                                <a href="#">Контакти</a>
+                            </li>
+                            <li>
+                                <a href="#">Умови користування</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Інформація про фінансову установу, яка підлягає оприлюдненню згідно з законодавством</a>
+                            </li>
+                            <li>
+                                <a href="#">Додаткова інформація про фінансові послуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerTopContainerNavigation">
+                        <div class="footerTopContainerNavigationImg">
+                            <img src="img/footerTopContainerNavigationImg2.png" alt="Контакти">
+                        </div>
+                        <ul class="footerTopContainerNavigationContact">
+                            <li class="footerNavBold">
+                                Контакти:
+                            </li>
+                            <li>
+                                <a href="tel:097-369-41-11">097 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:095-369-41-11">095 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:063-369-41-11">063-369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:800-312-727">0 800 312-727</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@kachay.com.ua">info@kachay.com.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerTopContainerNavigationFlex">
+                        <div class="footerTopContact">
+                            <div class="footerTopContactTime">
+                                <div class="footerTopContainerNavigationImg">
+                                    <img src="img/footerTopContainerNavigationImg3.png" alt="Час роботи">
+                                </div>
+                                <ul class="footerTopContainerNavigationTime">
+                                    <li class="footerNavBold">
+                                        Час роботи:
+                                    </li>
+                                    <li>
+                                        пн-пт: с 8:00 до 20:00
+                                    </li>
+                                    <li>
+                                        сб-нд: с 9:00 до 20:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footerTopContactSocial">
+                                <div class="footerTopContainerNavigationImg">
+                                    <img src="img/footerTopContainerNavigationImg5.png" alt="Ми в мережі:">
+                                </div>
+                                <p class="footerNavBold">Ми в мережі:</p>
+                                <ul class="footerTopContactSocialFlex">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Facebook.svg" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Instagram.svg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Subtract.svg" alt="Subtract">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerTopContactBtn">
+                            <button class="footerTopContactBtnAppeal">Залишити звернення</button>
+                            <button class="footerTopContactBtnChat">Онлайн чат</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCenter">
+            <div class="wrapper">
+                <h3>Кращі пропозиції в компанії</h3>
+                <div class="footerCenterContainer">
+                    <ul>
+                        <li>
+                            <a href="#">Кредит без відмов</a>
+                        </li>
+                        <li>
+                            <a href="#">Безвідсотковий кредит</a>
+                        </li>
+                        <li>
+                            <a href="#">Гроші до зарплати</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит за 5 хвилин</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Гроші на картку терміново</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит з поганою кредитною історією</a>
+                        </li>
+                        <li>
+                            <a href="#">Позика онлайн на картку</a>
+                        </li>
+                        <li>
+                            <a href="#">Гроші в борг</a>
+                        </li>
+                    </ul>
+                    <ul class="footerCenterContainerMargin">
+                        <li>
+                            <a href="#">Міні позика</a>
+                        </li>
+                        <li>
+                            <a href="#">Мікропозики і мікрокредити онлайн на картку</a>
+                        </li>
+                        <li>
+                            <a href="#">Потребительский кредит</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит онлайн на картку цілодобово</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит безробітним</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="wrapper">
+                <p>ТОВ "КАЧАЙ ГРОШІ" 2016 - 2022 – Свідоцтво фінансової установи ФК №В0000479 від 31.12.2021 видане Національним Банком України</p>
+                <div class="footerBottomImg">
+                    <img src="img/footerBottomImg.png" alt="КАЧАЙ ГРОШІ">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.2/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="script/burger.js"></script>
+    <script src="script/calculator.js"></script>
+    <script src="script/select.js"></script>
+    <script src="script/bannerSlideer.js"></script>
+    <script src="script/reviewsSlideer.js"></script>
+    <script src="script/newsSlider.js"></script>
+    <script src="script/scroll.js"></script>
+
+</body>
+
+</html>
