@@ -11,7 +11,9 @@ button {
 * {
     outline: none !important;
 }
-
+.overflow {
+    overflow: hidden;
+}
 .menu-button-container {
     display: flex;
     width: 38px;
@@ -1467,22 +1469,218 @@ border-radius: 12px;
 .mCSB_draggerRail {
     background: transparent !important;
 }
+.tabs-container {
+    display: flex;
+    flex-direction: column;
+  }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  .tab-nav.active {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .tab-nav.active:before {
+    content: "";
+    background: url(../img/range.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 22px;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  .tab.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bannerAboutUs {
+    background: url(../img/bgAbout.png);
+    background-repeat: repeat;
+    background-size: contain;
+    padding-top: 12px;
+  }
+  .bannerAboutUs::before {
+    content: none;
+  }
+  .bannerAboutUs::after {
+    content: none;
+  }
+  .bannerAboutUsTopContent {
+    height: 100%;
+  }
+  .bannerAboutUsTop {
+    background: url(../img/bgBanner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 1100px;
+    padding: 64px 0;
+    height: 100%;
+    height: 592px;
+    box-sizing: border-box;
+    margin-right: auto;
+    position: relative;
+    margin-left: -43px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+.bannerAboutUsTopTabs {
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 48px;
+    box-sizing: border-box;
+    width: 370px;
+    height: 370px;
+    background: #9D6FF3;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+    border-radius: 12px;
+}
+.menuTopLink {
+    display: flex;
+    align-items: center;
+}
+.menuTopLink1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    padding: 12px 0 12px 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+} 
+.menuTopLink2 {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #9D6FF3;
+}
+.menuTopLink1::after {
+    content: "";
+    background: url(../img/menuTopLink1.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+.bannerAboutUsTopTabs h2 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 52px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.bannerAboutUsTopTabs button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    margin-bottom: 12px;
+    background: transparent;
+    border: 0;
+    align-items: center;
+}
+.bannerAboutUsTopTabs button:before {
+    content: "";
+    background: url(../img/after.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 12.83px;
+    margin-right: 12px;
+}
+.tab {
+    max-width: 705px;
+    height: 100%;
+}
+.tabScroll {
+    overflow-y: scroll;
+    height: 100%;
+}
+.tab > div {
+    height: 460px;
+    overflow: hidden;
+}
+.tab h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.tab div {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+.tab1Content {
+    height: auto !important;
+}
+.bannerAboutUsButtom .calculator {
+    padding: 0px 0px 32px;
+    width: 870px;
+    background: #FFFFFF;
+    box-shadow: 0px -8px 32px rgba(0, 0, 0, 0.05), -16px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.bannerAboutUsButtom img{
+    max-width: 100%;
+    width: 100%;
+}
+.bannerAboutUsButtom {
+    display: flex;
+    align-items: center;
+}
+.calculatorAbout .calculatorSection {
+    display: flex;
+    flex-direction: row;
+}
+.calculatorSectionAvout {
+    width: 50%;
+    margin-right: 32px;
+}
+.calculatorSectionAvoutResult {
+    width: 50%;
+}
+.calculatorAbout h2 {
+   width: 88%;
+   height: 48px;
+   margin: 0 auto;
+}
+.calculatorAbout .calculatorSection {
+    padding: 32px 50px;
+}
+.calculatorSectionAvoutResult .calculatorBtn > input {
+    min-width: 100%;
+}
+.calculatorAbout .calculatorSectionNBU {
+    margin-top: 0;
+    padding: 0 50px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.bannerAboutUsButtomImg .bannerSliderWrapperLeft {
+    display: none;
+}
 
 
 
@@ -1595,6 +1793,15 @@ border-radius: 12px;
         margin-left: 0;
         margin-top: 8px;
     }
+    .bannerAboutUsTop  {
+        max-width: 93%;
+    }
+    .bannerAboutUsTopContent {
+        width: 65%;
+    }
+    .tabScroll {
+        padding-right: 20px;
+    }
 }
 
 
@@ -1683,6 +1890,10 @@ border-radius: 12px;
     }
     .footerTopContactSocialFlex {
         justify-content: space-between;
+    }
+    .bannerAboutUsTopTabs {
+        width: 300px;
+        height: 250px;
     }
 }
 
@@ -1880,6 +2091,12 @@ border-radius: 12px;
     }
     .menu.open {
         padding-bottom: 16px;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .menu.open .wrapper {
+        overflow-y: auto;
+        overflow-x: hidden;
     }
     .bannerSliderItem {
         flex-direction: column-reverse;
@@ -2163,6 +2380,102 @@ border-radius: 12px;
     }
     .footerTopContactBtn {
         align-items: flex-start;
+    }
+    .bannerAboutUs {
+        padding-top: 8px;
+    }
+    .bannerAboutUsTop {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 16px 12px;
+        box-sizing: border-box;
+    }
+    .bannerAboutUsTop {
+        height: 384px;
+    }
+    .bannerAboutUsTop {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+    .bannerAboutUsTopTabs {
+        height: auto;
+        width: 100%;
+        padding: 16px 22px;
+        box-sizing: border-box;
+        position: static;
+        transform: none;
+        margin-bottom: 16px;
+    }
+    .bannerAboutUsTopTabs h2 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 16px;
+    }
+    .tab h2 {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 8px;
+    }
+    .bannerAboutUsTopContent {
+        height: 126px;
+    }
+    .tab-nav.active {
+        font-size: 20px;
+    }
+    .tab > div {
+        height: auto;
+    }
+    .tab div {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .tab-nav {
+        margin-bottom: 8px !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+    .bannerAboutUsTopContent {
+        width: 100%;
+    }
+    .tab {
+        height: auto;
+    }
+    .tabScroll {
+        height: 115px;
+    }
+    .bannerAboutUsButtom {
+        flex-direction: column;
+    }
+    .bannerAboutUsButtom .calculator {
+        width: 100%;
+    }
+    .calculatorAbout .calculatorSection {
+        flex-direction: column;
+    }
+    .calculatorSectionAvout {
+        margin-right: 0;
+        width: 100%;
+    }
+    .calculatorSectionAvoutResult {
+        width: 100%;
+    }
+    .bannerAboutUsButtom {
+        margin-top: 32px;
+    }
+    .calculatorAbout h2 {
+        width: 100%;
+    }
+    .bannerAboutUsButtomImg > img {
+        display: none;
+    }
+    .bannerAboutUsButtomImg .bannerSliderWrapperLeft {
+        display: flex;
+    }
+    .calculatorAbout {
+        margin-bottom: 26px;
+    }
+    .bannerAboutUsButtomImg {
+        margin-right: auto;
     }
 }
 /*767px*/
