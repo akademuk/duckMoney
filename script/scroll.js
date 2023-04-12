@@ -1,8 +1,13 @@
 $(document).ready(function() {
-    $('#informationScroll').perfectScrollbar({
-      wheelSpeed: 2,
-      wheelPropagation: true,
-      minScrollbarLength: 20
+    $(".informationScroll").mCustomScrollbar({
+      theme: "dark",
+      scrollInertia: 200,
+      axis: "y",
+      scrollbarPosition: "inside",
+      mouseWheel: {
+        enable: true,
+        scrollAmount: 200
+      }
     });
   });
   
