@@ -1502,7 +1502,7 @@ border-radius: 12px;
     background: url(../img/bgAbout.png);
     background-repeat: repeat;
     background-size: contain;
-    padding-top: 12px;
+    padding-top: 20px;
   }
   .bannerAboutUs::before {
     content: none;
@@ -1518,6 +1518,7 @@ border-radius: 12px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    border-radius: 12px;
     max-width: 1100px;
     padding: 64px 0;
     height: 100%;
@@ -1533,7 +1534,7 @@ border-radius: 12px;
 .bannerAboutUsTopTabs {
     position: absolute;
     top: 50%;
-    right: -120px;
+    right: -70px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -1681,8 +1682,14 @@ border-radius: 12px;
 .bannerAboutUsButtomImg .bannerSliderWrapperLeft {
     display: none;
 }
-
-
+.aboutUsLove {
+    position: absolute;
+    top: -48.5%;
+    width: 230px;
+    height: 180.37px;
+    z-index: -1;
+    right: 65px;
+}
 
 
 
@@ -1802,6 +1809,10 @@ border-radius: 12px;
     .tabScroll {
         padding-right: 20px;
     }
+    .bannerAboutUsTop {
+        margin-left: 0;
+        padding-left: 48px;
+    }
 }
 
 
@@ -1894,6 +1905,16 @@ border-radius: 12px;
     .bannerAboutUsTopTabs {
         width: 300px;
         height: 250px;
+    }
+    .aboutUsLove {
+        top: -71.5%;
+    }
+    .tab-nav.active {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .bannerAboutUsTopContent {
+        width: 62%;
     }
 }
 
@@ -2476,6 +2497,9 @@ border-radius: 12px;
     }
     .bannerAboutUsButtomImg {
         margin-right: auto;
+    }
+    .aboutUsLove {
+        display: none;
     }
 }
 /*767px*/
