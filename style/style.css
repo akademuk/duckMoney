@@ -1802,6 +1802,203 @@ border-radius: 12px;
 .informationPageTopList li:nth-last-of-type(1) {
     margin-bottom: 0;
 }
+.contactPageContainerContact {
+    padding: 48px;
+    display: flex;
+    margin-bottom: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+    border-radius: 12px;
+}
+.contactPageContainerContactForm {
+    width: 100%;
+    min-width: 460px;
+    margin-right: 48px;
+}
+.contactPageContainerContactMaps {
+    width: 100%;
+    min-width: 560px;
+}
+.contactPageContainerContactForm h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 32px;
+}
+.contactPageContainerContactForm form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactPageContainerContactForm form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.contactPageContainerContactForm form label input {
+    padding: 10px 0px 10px 8px;
+    width: 460px;
+    height: 56px;
+    background: #F6F6F6;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+.contactPageContainerContactForm form label input::placeholder {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #999999;
+}
+.contactPageContainerContactForm form label select {
+    padding: 10px 0px 10px 8px;
+    width: 460px;
+    height: 56px;
+    background: #F6F6F6;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+}
+.contactPageContainerContactForm form label textarea {
+    padding: 10px 0px 10px 8px;
+    width: 460px;
+    height: 56px;
+    background: #F6F6F6;
+    border-radius: 12px;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333; 
+    resize: none;
+}
+.formSubmit {
+    margin-top: 17px;
+    width: 100%;
+    height: 56px;
+    background: #FFCE00;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.contactPageContainerContactMaps img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+}
+select#purpose::-ms-expand,
+select#purpose::-webkit-expand {
+  display: none;
+}
+
+select#purpose {
+  padding-right: 30px;
+  background-image: url('../img/select.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.contactPageCenter {
+    padding: 32px 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.contactPageCenterSection {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.contactPageCenterSectionImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    background: #F3F7FF;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.contactPageCenterSection a {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.contactPageCenterSection::after {
+    content: "";
+    width: 1px;
+    background: #ECEFF8;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -50%;
+}
+.contactPageCenterSection:nth-last-of-type(1)::after {
+    content: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1946,6 +2143,27 @@ border-radius: 12px;
     }
     .informationPageTop {
         padding: 64px;
+    }
+    .contactPageContainerContactForm {
+        min-width: auto;
+        width: 50%;
+    }
+    .contactPageContainerContactMaps {
+        min-width: auto;
+        width: 50%;
+    }
+    .contactPageContainerContact {
+        padding: 16px;
+    }
+    .contactPageCenterSection::after {
+        content: none;
+    }
+    .contactPageCenter {
+        padding: 16px;
+        margin-bottom: 64px;
+    }
+    .contactPage {
+        padding-top: 0 !important;
     }
 }
 
@@ -2664,6 +2882,29 @@ border-radius: 12px;
     .informationPageTopContainerSection {
         padding: 16px;
     }
+    .contactPageContainerContact {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 4px;
+        margin-bottom: 0;
+        border-radius: 12px 12px 0 0;
+    }
+    .contactPageCenter {
+        border-radius: 0 0 12px 12px;
+        padding: 0 4px 24px 4px;
+    }
+    .contactPageCenterSection {
+        width: 33%;
+    }
+    .contactPageContainerContactForm {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .contactPageContainerContactMaps {
+        width: 100%;
+        height: 400px;
+    }
 }
 /*767px*/
 
@@ -2845,6 +3086,43 @@ border-radius: 12px;
       }      
     .menuTopLink1::after {
         margin-left: 0;
+    }
+    .contactPageContainerContactForm h2 {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 16px;
+        width: 100%;
+        text-align: center;
+    }
+    .contactPageContainerContactForm form label input {
+        height: 46px;
+    }
+    .contactPageContainerContactForm form label select {
+        height: 46px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contactPageContainerContactForm form label input::placeholder {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contactPageContainerContactForm form label textarea {
+        height: 46px;
+    }
+    .formSubmit {
+        margin-top: 0;
+    }
+    .contactPageCenter {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 8px;
+        margin-bottom: 32px;
+    }
+    .contactPageCenterSection {
+        padding-bottom: 16px;
+        width: 220px;
+        border-bottom: 1px solid #E6E6E6;
+        margin-bottom: 16px;
     }
 }
 
