@@ -2388,11 +2388,63 @@ select#purpose {
     height: 26.73px;
     object-fit: contain;
 }
-
-
-
-
-
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 48px;
+    width: 556px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05), 0px -8px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 64px auto;
+}
+.modalContentTop {
+    padding: 16px;
+    background: #F3F7FF;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.modalContentTop img {
+    margin-bottom: 10px;
+}
+.modalContentTop h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+.modalForm .wrapper .contactPageContainerContactForm {
+    min-width: 100%;
+    margin-right: 0;
+}
+.fileInput {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: center;
+    margin-bottom: 0 !important;
+}
+.fileInput img {
+    margin-right: 8px;
+}
+.inputText {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+.displayNone {
+    display: none;
+}
 
 
 
@@ -3394,6 +3446,9 @@ select#purpose {
     .reviewsTopContainerRight form label input {
         width: 100%;
     }
+    .modalContent {
+        width: 100%;
+    }
 }
 /*767px*/
 
@@ -3825,6 +3880,25 @@ select#purpose {
         font-size: 14px;
         line-height: 19px;
         margin-bottom: 22px;
+    }
+    .modalContent {
+        margin: 24px 0;
+        padding: 4px;
+        box-sizing: border-box;
+    }
+    .modalContentTop {
+        padding: 21px 14px;
+        box-sizing: border-box;
+    }
+    .modalContentTop h2 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .fileInput {
+        margin-bottom: 16px !important;
+    }
+    .displayNone {
+        display: block;
     }
 }
 
