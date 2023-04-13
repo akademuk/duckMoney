@@ -1975,17 +1975,67 @@ select#purpose {
 .contactPageCenterSection:nth-last-of-type(1)::after {
     content: none;
 }
-
-
-
-
-
-
-
-
-
-
-
+.howGetPageTop {
+    padding: 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.howGetPageTop h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.howGetPageTop > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.howGetPageTopContainer {
+    margin-top: 64px;
+}
+.howGetPageCont {
+    display: flex;
+    margin-bottom: 64px;
+}
+.howGetPageCont > img {
+    margin-right: 32px;
+}
+.howGetPageText {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+.howGetPageCont2 {
+    margin-left: 182px;
+    align-items: flex-start;
+}
+.howGetPageTextWidtn {
+    width: 450px;
+}
+.green {
+    color: #AFEDC8 !important;
+}
+.gray {
+    color: #E4D6FF !important;
+}
+.yellow {
+    color: #FBEC9D !important;
+}
+.howGetPageCont img {
+    width: 313px;
+    height: 170px;
+}
+.blue {
+    color: #BED5EF !important;
+}
 
 
 
@@ -2165,6 +2215,15 @@ select#purpose {
     .contactPage {
         padding-top: 0 !important;
     }
+    .howGetPageCont2 {
+        margin-left: 0;
+    }
+    .howGetPageTextWidtn {
+        width: 100%;
+    }
+    .howGetPageCont {
+        align-items: center;
+    }
 }
 
 
@@ -2272,6 +2331,9 @@ select#purpose {
         width: 100%;
         padding-left: 25px;
         box-sizing: border-box;
+    }
+    .banner.bannerAboutUs.howGetPage {
+        padding-top: 0 !important;
     }
 }
 
@@ -2905,6 +2967,48 @@ select#purpose {
         width: 100%;
         height: 400px;
     }
+    .howGetPageText {
+        position: relative;
+    }
+    .howGetPageCont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .howGetPageText .loanOnlineContainerTextLeft {
+        position: absolute;
+        top: -90px;
+        left: 205px;
+    }
+    .howGetPageCont {
+        margin-bottom: 40px;
+    }
+    .howGetPageCont:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+    .howGetPageText {
+        margin-top: 16px;
+    }
+    .howGetPageTop {
+        padding: 16px 8px;
+    }
+    .howGetPageTop h2 {
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 8px;
+    }
+    .howGetPageTop > p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 16px;
+    }
+    .howGetPageTopContainer {
+        margin-top: 0;
+    }
+    .howGetPageCont img {
+        margin-right: 0;
+        width: auto;
+        height: auto;
+    }
 }
 /*767px*/
 
@@ -2917,6 +3021,10 @@ select#purpose {
 @media(max-width: 576px) {
     .hamburger p {
         font-size: 0;
+    }
+    .howGetPageText2 .loanOnlineContainerTextLeft{
+        left: auto;
+        right: 200px;
     }
     .calculatorBtn {
         display: flex;
