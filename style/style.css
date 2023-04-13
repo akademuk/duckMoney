@@ -1502,7 +1502,7 @@ border-radius: 12px;
     background: url(../img/bgAbout.png);
     background-repeat: repeat;
     background-size: contain;
-    padding-top: 20px;
+    padding-top: 0;
   }
   .bannerAboutUs::before {
     content: none;
@@ -2036,13 +2036,74 @@ select#purpose {
 .blue {
     color: #BED5EF !important;
 }
+.howToRepayPageTopContentSection {
+    display: flex;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ECEFF8;
+    margin-bottom: 32px;
+}
+.howToRepayPageTopContent {
+    margin-top: 32px;
+}
+.howToRepayPageTopContentSectionLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 148px;
+    height: initial;
+    background: #F3F7FF;
+    border-radius: 8.88px;
+    margin-right: 32px;
+}
+.howToRepayPageTopContentSectionLeft img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+.howToRepayPageTopContentSectionRight h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.howToRepayPageTopContentSectionRightText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+}
+.howToRepayPageTopContentSectionRight > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    min-width: 286px;
+    height: 56px;
+    box-sizing: border-box;
+    background: #FFCE00;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+    width: max-content;
+    margin-top: 14px;
+}
 
-
-
-
-
-
-
+.Importantly {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF671B;
+    margin-top: 14px;
+}
+.howToRepayPageTopContentSection:nth-last-of-type(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
 
 
 
@@ -2258,6 +2319,12 @@ select#purpose {
     }
     .banner {
         height: 100%;
+    }
+    .bannerAboutUsButtom {
+        margin-top: 40px;
+    }
+    .bannerAboutUs {
+        padding-top: 0 !important;
     }
     .bannerDots {
         display: none;
@@ -3232,7 +3299,69 @@ select#purpose {
         border-bottom: 1px solid #E6E6E6;
         margin-bottom: 16px;
     }
+    .howGetPageTop {
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+    }
+    .howToRepayPageTopContentSection {
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+        border-radius: 12px;
+        padding: 8px 8px 16px 8px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+    }
+    .howToRepayPageTopContentSectionLeft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 148px;
+        height: 148px;
+        margin: 0 auto 8px auto;
+    }
+    .howToRepayPageTopContentSection:nth-last-of-type(1) {
+        padding-bottom: 16px;
+    }
+    .Importantly {
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .howToRepayPageTopContentSectionRight h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #000000;
+        width: 80%;
+        margin: 0 auto 8px auto;
+    }
+    .howToRepayPageTopContentSectionRightText {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+    }
+    .howToRepayPageTopContentSectionRight > a {
+        margin: 16px auto 0 auto;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width: 350px) {
     .calculatorBtn input {
@@ -3247,7 +3376,13 @@ select#purpose {
     .bannerSliderItemDialog h1 {
         font-size: 16px;
     }
+    .howToRepayPageTopContentSectionRight > a {
+        min-width: auto;
+    }
     .loanOnlineContainerSection img {
+        width: 100%;
+    }
+    .bannerAboutUsButtomImg {
         width: 100%;
     }
     .loanOnlineContainerTextLeft {
