@@ -2252,6 +2252,151 @@ select#purpose {
 .openNewsPageRightSectionImg:nth-last-of-type(1) {
     margin-bottom: 0;
 }
+.reviewsTopContainerLeft {
+    width: 750px;
+    margin-right: 27px;
+    height: 650px;
+    overflow: hidden;
+}
+.reviewsTopContainerLeftScroll {
+    overflow-y: scroll;
+    height: 100%;
+}
+.reviewsTopContainerRight {
+    width: 350px;
+}
+.reviewsTopContainer {
+    display: flex;
+}
+.reviewsTop {
+    padding: 32px;
+}
+.reviewsTop h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    padding: 10px 0;
+    margin-bottom: 32px;
+}
+.reviewsTopContainerLeftSection {
+    width: 90%;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin: 0 auto 16px auto;
+}
+.reviewsTopName {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.reviewsTopNameTittle {
+    margin-left: 17px;
+}
+.reviewsTopNameTittle h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+.reviewsTopNameText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.reviewsTopNameDate {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #000000;
+}
+.reviewsTopContainerRight {
+    background: #F3F7FF;
+    border-radius: 12px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviewsTopContainerRight > img {
+    margin-bottom: 16px;
+}
+.reviewsTopContainerRight > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 16px;
+}
+.reviewsTopContainerRight form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.reviewsTopContainerRight form label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.reviewsTopContainerRight form label input {
+    margin-top: 7px;
+    padding: 10px 0px 10px 8px;
+    width: 320px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none;
+}
+.reviewsTopContainerRight form label input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+}
+.reviewsTopContainerRight form label textarea {
+    resize: none;
+    padding: 10px 0px 10px 8px;
+    height: 81px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none;
+}
+.reviewsTopContainer .pagination {
+    display: none;
+}
+.footerTopContainerNavigationImg > img {
+    width: 29.27px;
+    height: 26.73px;
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3240,6 +3385,15 @@ select#purpose {
     .bannerAboutUs {
         background-size: auto;
     }
+    .reviewsTopContainerLeft {
+        width: 50%;
+    }
+    .reviewsTopContainerRight {
+        width: 50%;
+    }
+    .reviewsTopContainerRight form label input {
+        width: 100%;
+    }
 }
 /*767px*/
 
@@ -3597,6 +3751,80 @@ select#purpose {
     }
     .bannerAboutUsButtom .calculator {
         padding-bottom: 16px;
+    }
+    .menuTopLink {
+        height: 40px;
+    }
+    .menuTopLink a{
+        padding: 0;
+    }
+    .menuTopLink {
+        margin-bottom: 12px;
+    }
+    .reviewsTop {
+        background: #FFFFFF;
+        box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+        border-radius: 12px;
+        padding: 16px 4px;
+        box-sizing: border-box;
+    }
+    .reviewsTop h2 {
+        padding: 0;
+        margin-bottom: 24px;
+    }
+    .reviewsTopContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .reviewsTopContainerLeft {
+        width: 100%;
+        margin-right: 0;
+    }
+    .reviewsTopContainerLeftScroll {
+        overflow: hidden;
+    }
+    .reviewsTopContainerLeftSection {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    .reviewsTopNameTittle h3 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+    .reviewsTopName {
+        margin-bottom: 13px;
+    }
+    .reviewsTopNameDate {
+        display: none;
+    }
+    .reviewsTopNameText {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+    .reviewsTopContainer .pagination {
+        display: block;
+        margin: 24px 0;
+    }
+    .reviewsTopContainerLeft {
+        height: 730px;
+    }
+    .reviewsTopContainerRight {
+        width: 100%;
+        margin-top: 32px;
+    }
+    .reviewsTopContainerRight {
+        padding: 16px 8px;
+    }
+    .formSubmit {
+        height: 46px;
+    }
+    .reviewsTopContainerRight > p {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 22px;
     }
 }
 
