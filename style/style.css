@@ -886,6 +886,8 @@ input[type="range"]::-ms-track {
     text-align: center;
     color: #000000;
     text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #000000;
 }
 .reviewsPrev,
 .reviewsNext {
@@ -1274,7 +1276,17 @@ input[type="range"]::-ms-track {
     margin-bottom: 24px !important;
 }
 .footerTopContainerNavigationTime li:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
     margin-bottom: 14px;
+}
+.footerTopContainerNavigationTime li:nth-of-type(3) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
 }
 .footerTopContainerNavigation ul li a {
     font-weight: 400;
@@ -3516,6 +3528,34 @@ select#purpose {
         display: flex;
         flex-direction: column;
     }
+    .banner {
+        padding-top: 16px;
+    }
+    .resultSum {
+        margin-bottom: 4px;
+    }
+    .calculatorBtn input {
+        height: 46px;
+        padding: 0;
+    }
+    .WhatRequired .wrapper > a {
+        height: 46px;
+        padding: 0;
+    }
+    .aboutLoans .wrapper > a {
+        height: 46px;
+        padding: 0;
+    }
+    .footerTopContactSocial {
+        width: 100%;
+    }
+    .footerTopContactSocialFlex {
+        max-width: 180px;
+        justify-content: space-between;
+    }
+    .footerTopContactBtn button {
+        height: 46px;
+    }
 }
 
 
@@ -3555,9 +3595,7 @@ select#purpose {
     .bannerAboutUsButtomImg {
         width: 100%;
     }
-    .loanOnlineContainerTextLeft {
-        display:none;
-    }
+
     .WhatRequired .wrapper > a {
         min-width: 100%;
     }
