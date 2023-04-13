@@ -1541,7 +1541,7 @@ border-radius: 12px;
     margin-left: -43px;
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 48px;
   }
 .bannerAboutUsTopTabs {
     position: absolute;
@@ -1684,6 +1684,8 @@ border-radius: 12px;
 }
 .calculatorSectionAvoutResult .calculatorBtn > input {
     min-width: 100%;
+    height: 46px;
+    padding: 0;
 }
 .calculatorAbout .calculatorSectionNBU {
     margin-top: 0;
@@ -1696,9 +1698,9 @@ border-radius: 12px;
 }
 .aboutUsLove {
     position: absolute;
-    top: -48.5%;
-    width: 230px;
-    height: 180.37px;
+    top: -40.5%;
+    width: 200px;
+    height: 150px;
     z-index: -1;
     right: 65px;
 }
@@ -2416,6 +2418,10 @@ select#purpose {
     .howGetPageCont {
         align-items: center;
     }
+    .bannerAboutUsButtom {
+        margin-top: 64px !important;
+        margin-bottom: 64px !important;
+    }
 }
 
 
@@ -2453,6 +2459,7 @@ select#purpose {
     }
     .bannerAboutUsButtom {
         margin-top: 40px;
+        margin-bottom: 40px !important;
     }
     .bannerAboutUs {
         padding-top: 0 !important;
@@ -2538,6 +2545,10 @@ select#purpose {
     }
     .openNewsPage {
         padding: 32px 16px;
+    }
+    .bannerAboutUsButtom {
+        margin-top: 32px !important;
+        margin-bottom: 32px !important;
     }
 }
 
@@ -3223,6 +3234,12 @@ select#purpose {
         width: 100%;
         margin-right: 0;
     }
+    .bannerAboutUsButtom {
+        margin-bottom: 0 !important;
+    }
+    .bannerAboutUs {
+        background-size: auto;
+    }
 }
 /*767px*/
 
@@ -3555,6 +3572,31 @@ select#purpose {
     }
     .footerTopContactBtn button {
         height: 46px;
+    }
+    .logotype {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logotype a img {
+        width: 60px;
+        height: 35px;
+    }
+    .logotype a {
+        width: auto;
+    }
+    .calculatorAbout .calculatorSectionNBU {
+        font-size: 8px;
+        line-height: 11px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .calculatorAbout .calculatorSectionNBU a {
+        font-size: 8px;
+        line-height: 11px;
+    }
+    .bannerAboutUsButtom .calculator {
+        padding-bottom: 16px;
     }
 }
 
