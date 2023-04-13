@@ -2104,7 +2104,37 @@ select#purpose {
     padding-bottom: 0;
     border-bottom: 0;
 }
-
+.informationPageTopContainer .informationPageTopContainerSection .newsContainerSection{
+    width: 100%;
+    box-sizing: border-box;
+}
+.informationPageTopContainer .informationPageTopContainerSection {
+    padding: 0;
+}
+.newsPageTop {
+    padding: 32px;
+}
+.pagination ul {
+    display: flex;
+    justify-content: center;
+}
+.pagination ul li{
+    width: 40px;
+    height: 40px;
+    background: #F6F6F6;
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.pagination ul li:nth-last-of-type(1) {
+    margin-right: 0;
+}
 
 
 
@@ -2401,6 +2431,9 @@ select#purpose {
     }
     .banner.bannerAboutUs.howGetPage {
         padding-top: 0 !important;
+    }
+    .newsPageTop {
+        padding:32px 16px;
     }
 }
 
@@ -3076,6 +3109,9 @@ select#purpose {
         width: auto;
         height: auto;
     }
+    .informationPageTopContainer .informationPageTopContainerSection {
+        width: 48%;
+    }
 }
 /*767px*/
 
@@ -3345,6 +3381,9 @@ select#purpose {
     }
     .howToRepayPageTopContentSectionRight > a {
         margin: 16px auto 0 auto;
+    }
+    .informationPageTopContainer .informationPageTopContainerSection {
+        width: 100%;
     }
 }
 
