@@ -337,6 +337,7 @@ header .wrapper {
 .calculator h2 {
     font-weight: 700;
     font-size: 16px;
+    height: 50px;
     line-height: 22px;
     text-align: center;
     letter-spacing: 1px;
@@ -352,7 +353,7 @@ header .wrapper {
 }
 
 .calculatorSection {
-    padding: 16px 42px;
+    padding: 16px 39px;
     box-sizing: border-box;
 }
 
@@ -480,7 +481,7 @@ input[type="range"]::-ms-track {
 }
 
 .calculator {
-    width: 100%;
+    width: 370px;
 }
 
 .resultSum {
@@ -3033,9 +3034,7 @@ select#purpose {
     border-top: 1px solid #CCCCCC;
     padding-top: 16px;
 }
-.calculatorSection {
-    padding: 16px 4px !important;
-}
+
 .paymentScheduleOpen > p {
     font-weight: 500;
     font-size: 14px;
@@ -3148,7 +3147,12 @@ select#purpose {
 .calculatorAbout .calculatorSectionNBU a {
     font-size: 12px;
 }
-
+.SeoPageCalc1 {
+    width: 100%;
+}
+.SeoPageCalc1 .calculatorSection {
+    padding: 16px 0 !important;
+}
 
 
 
@@ -3370,9 +3374,18 @@ select#purpose {
         width: 50%;
     }
     .bannerSliderWrapperRight  {
-        width: 40%;
+        width: auto;
         margin-left: auto !important;
         margin-right: 20px !important;
+    }
+    .calculatorSection {
+        padding: 16px;
+    }
+    .bannerSliderr {
+        width: 100%;
+    }
+    .bannerNoneLeft {
+        width: 100%;
     }
 }
 
@@ -3626,7 +3639,8 @@ select#purpose {
         top: 100px;
     }
     .bannerSliderItemDialog {
-        left: 5%;
+        left: auto;
+        right: 1%;
     }
     .calculatorBtn > input {
         min-width: max-content;
@@ -3636,6 +3650,9 @@ select#purpose {
     }
     .calculatorAbout .calculatorSection {
         padding: 32px 16px !important;
+    }
+    .SeoPageCalc1 {
+        padding:16px !important;
     }
 }
 
@@ -3924,6 +3941,13 @@ select#purpose {
 
     .bannerSliderWrapperRight {
         width: 100%;
+        background: transparent;
+        box-shadow: none;
+    }
+    .calculator {
+        background: #FFFFFF;
+        box-shadow: -16px 16px 32px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
     }
 
     .calculatorSection {
@@ -5272,6 +5296,22 @@ select#purpose {
 }
 
 /* //max-width: 576px */
+
+
+/* //max-width: 400px */
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 100%;
+    }
+    .calculatorSection {
+        padding: 16px 4px;
+    }
+}
+
+/* //max-width: 400px */
+
+
 
 @media (max-width: 350px) {
     .calculatorBtn input {
