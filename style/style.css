@@ -144,7 +144,9 @@ header .wrapper {
 }
 
 .banner {
-    background: #F8F4FF;
+    background: url(../img/BGBAners.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     padding-top: 100px;
     z-index: 1;
@@ -156,29 +158,7 @@ header .wrapper {
     z-index: 100;
 }
 
-.banner::after {
-    content: "";
-    background: #EEE4FF;
-    filter: blur(92px);
-    position: absolute;
-    width: 780px;
-    height: 936px;
-    left: -178px;
-    top: -349.2px;
-    z-index: 2;
-}
 
-.banner::before {
-    content: "";
-    position: absolute;
-    width: 688px;
-    height: 798.97px;
-    left: 1074px;
-    top: 274.8px;
-    background: rgba(254, 228, 255, 0.7);
-    filter: blur(177px);
-    z-index: 2;
-}
 
 .headerLeftContact {
     display: flex;
@@ -3002,28 +2982,147 @@ select#purpose {
 .mainSeoPageWidth {
     align-items: flex-start;
 }
+.paymentScheduleResult {
+    margin-bottom: 0 !important;
+}
+.paymentSchedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.paymentSchedule > p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666666;
+}
+.paymentSchedule button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    background: transparent;
+    border: none;
+    padding-right: 0;
+}
+.paymentSchedule button > img {
+    margin-left: 8px;
+}
+.bannerSliderWrapperRight {
+    margin-bottom: 61px;
+}
+.bannerSliderWrapperLeft {
+    display: flex;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.paymentScheduleOpen.active {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 16px;
+}
+.calculatorSection {
+    padding: 16px 4px !important;
+}
+.paymentScheduleOpen > p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666666;
+    width: 80%;
+    margin: 0 auto;
+}
+.paymentScheduleOpenContainer {
+    margin-top: 16px;
+    height: 100% !important;
+}
+.paymentScheduleSection {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #B0B0B0;
+    margin-bottom: 4px;
+}
+.paymentScheduleSection1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+}
+.paymentScheduleSection2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: #999999;
+    margin-left: auto;
+    margin-right: 9px;
+}
+.paymentScheduleSection3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+}
+.paymentScheduleOpenTxt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #9D6FF3;
+    width: 100%;
+    margin: 12px auto 16px auto;
+}
+.paymentScheduleOpen {
+    height: 0;
+    overflow: hidden;
+}
+.paymentScheduleOpen.active {
+     height: max-content !important;
+  }
+.calcOpen {
+    position: absolute;
+    top: 144px;
+    width: 370px;
+    background: #fff;
+    box-shadow: -16px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    z-index: 1;
+}
+.mainSeoPage {
+    position: relative;
+}
+.btnOpens img {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+}
+.btnOpens.active img{
+    transform: rotate(-180deg);
+    transition: all 0.3s;
+}
+.mainSeoPage.active::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bannerWrapperNone {
+    position: inherit !important;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+}
+.bannerNone {
+    position: inherit;
+}
 
 
 
@@ -3232,6 +3331,12 @@ select#purpose {
     }
     .bannerSeoPageRight h1 {
         font-size: 40px;
+    }
+    .calcOpen {
+        right: 32px;
+    }
+    .dialogPosition {
+        left: 30%;
     }
 }
 
@@ -3473,6 +3578,16 @@ select#purpose {
     }
     .mainSeoPageSection1 .WhatRequiredContainer .WhatRequiredContainerSection h3 {
         width: auto;
+    }
+    .bannerNoneLeft > img{
+        width: 360px;
+    }
+    .bannerNoneLeft .dialogPosition {
+        left: 5%;
+        top: -45%;
+    }
+    .calcOpen {
+        top: 100px;
     }
 }
 
@@ -4352,6 +4467,28 @@ select#purpose {
     }
     .SeoPageCalc {
         margin-bottom: 0;
+    }
+    .calcOpen {
+        position: static;
+        top: 0;
+    }
+    .bannerWrapperNone {
+        height: 100%;
+    }
+    .calcOpen {
+        width: 100%;
+    }
+    .paymentScheduleOpen > p {
+        display: flex;
+        justify-content: center;
+    }
+    .calcOpen .calculatorBtn > input{
+        display: block;
+        margin: 16px auto 0 auto;
+    }
+    .bannerNoneLeft .dialogPosition {
+        left: 120px;
+        top: 20px;
     }
 }
 

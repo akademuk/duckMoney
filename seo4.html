@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Кача Гроші</title>
+</head>
+
+<body class="body">
+    <header>
+        <div class="wrapper">
+            <div class="hamburger">
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <p>Меню</p>
+            </div>
+            <div class="logotype">
+                <a href="#">
+                    <img src="img/logo.png" alt="Кача Гроші">
+                </a>
+            </div>
+            <div class="headerLeftContact">
+                <div class="headerLeftNumber">
+                    <a href="#">0 (800) 753-363</a>
+                    <button>
+                        <img src="img/sr-information.svg" alt="information">
+                    </button>
+                </div>
+                <div class="headerLeftAuthorization">
+                    <button>Погасити</button>
+                    <button>Вхід</button>
+                </div>
+            </div>
+            <button class="loginBtnMobile">
+                <img src="img/LogIn.svg" alt="LogIn">
+            </button>
+        </div>
+    </header>
+
+    <div class="menu">
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <a href="index.html">Головна</a>
+                </li>
+                <li>
+                    <a href="aboutUs.html">Про Нас</a>
+                </li>
+                <li>
+                    <a href="howToGet.html">Як Отримати</a>
+                </li>
+                <li>
+                    <a href="#">Як подовжити</a>
+                </li>
+                <li>
+                    <a href="howToRepay.html">Як Погасити</a>
+                </li>
+                <li>
+                    <a href="news.html">Новини та акції</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Контакти</a>
+                </li>
+            </ul>
+            <div class="menuLanguage">
+                <select name="" id=""></select>
+            </div>
+            <div class="menuMobile">
+                <div class="menuMobileBtn">
+                    <button>Оформити кредит</button>
+                    <button>Погасити кредит</button>
+                </div>
+                <div class="menuMobileFlex">
+                    <div class="menuMobileFlexLeft">
+                        <p>Контакти:</p>
+                        <ul>
+                            <li>
+                                <a href="tel:097-369-41-11">097 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:095-369-41-11">095 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:063-369-41-11">063-369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:800-312-727">0 800 312-727</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@kachay.com.ua">info@kachay.com.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menuMobileFlexRight">
+                        <p>Ми в мережі:</p>
+                        <ul class="menuMobileFlexRightSocial">
+                            <li>
+                                <a href="#">
+                                    <img src="img/Facebook.svg" alt="Facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/Instagram.svg" alt="Instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/Subtract.svg" alt="Subtract">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="menuLanguage">
+                            <select name="" id=""></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner bannerNone">
+        <div class="wrapper bannerWrapperNone">
+            <div class="bannerSliderr">
+                <div class="bannerSliderItem">
+                    <div class="bannerSliderWrapperLeft bannerNoneLeft">
+                        <img src="img/duckBannerPage.png" alt="Кача Гроші">
+                        <div class="bannerSliderItemDialog dialogPosition">
+                            <h1>Швидкий кредит онлайн від Кача Гроші</h1>
+                        </div>
+                    </div>
+                    <div class="bannerSliderWrapperRight">
+                        <div class="calculator calcOpen">
+                            <h2>0,01% НОВИМ КЛІЄНТАМ</h2>
+                            <form class="calculatorSection">
+                                <div class="calculatorContainer">
+                                    <div class="calculatorContainerTop">
+                                        <label for="loan-amount">Сума:</label>
+                                        <span id="loan-amount-value">150 грн</span>
+                                    </div>
+                                    <div class="rangeContainer">
+                                        <p id="mine">
+                                            <img src="img/mine.svg" alt="mine">
+                                        </p>
+                                        <input type="range" id="loan-amount" min="150" max="15000" step="50"
+                                            value="150">
+                                        <p id="plus">
+                                            <img src="img/plus.svg" alt="plus">
+                                        </p>
+                                    </div>
+                                    <div class="calculatorContainerBottom calculatorContainerBottom2">
+                                        <p>150 грн</p>
+                                        <p>15 000 грн</p>
+                                    </div>
+                                </div>
+                                <div class="calculatorContainer">
+                                    <div class="calculatorContainerTop">
+                                        <label for="loan-duration">Термін:</label>
+                                        <span id="loan-duration-value">1 дн.</span>
+                                    </div>
+                                    <div class="rangeContainer">
+                                        <p id="mineDate">
+                                            <img src="img/mine.svg" alt="mine">
+                                        </p>
+                                        <input type="range" id="loan-duration" min="1" max="30" step="1" value="1">
+                                        <p id="plusDate">
+                                            <img src="img/plus.svg" alt="plus">
+                                        </p>
+                                    </div>
+                                    <div class="calculatorContainerBottom">
+                                        <p>1 день</p>
+                                        <p>30 днів</p>
+                                    </div>
+                                </div>
+                                <div id="result" class="paymentScheduleResult">
+                                    <div class="resultSum">
+                                        <p>Сумма:</p>
+                                        <span id=" "></span>
+                                    </div>
+                                    <div class="resultSum">
+                                        <p>Плата за кредит:</p>
+                                        <span id="percent"></span>
+                                    </div>
+                                    <div class="resultSum">
+                                        <p>Сума погашення на <span id="resultDate"></span></p>
+                                        <span id="resultSum"></span>
+                                    </div>
+                                </div>
+                                <div class="paymentSchedule">
+                                    <p>Графік нарахувань:</p>
+                                    <button class="btnOpens">
+                                        Детальніше
+                                        <img src="img/openResult.svg" alt="select">
+                                    </button>
+                                </div>
+                                <div class="paymentScheduleOpen">
+                                    <p>За користування кредитом без
+                                        зміни суми тіла
+                                    </p>
+                                    <div class="paymentScheduleOpenContainer">
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                        <div class="paymentScheduleSection">
+                                            <div class="paymentScheduleSection1">15.03.2023</div>
+                                            <div class="paymentScheduleSection2">750</div>
+                                            <div class="paymentScheduleSection3">0,5грн</div>
+                                        </div>
+                                    </div>
+                                    <div class="paymentScheduleOpenTxt">Рекомендовано сплачувати відсотки кожні 20 днів
+                                    </div>
+                                    <div class="resultSum">
+                                        <p>Сума погашення на <span id="resultDateOpen"></span></p>
+                                        <span id="resultSumOpen"></span>
+                                    </div>
+                                </div>
+                                <div class="calculatorBtn">
+                                    <input type="submit" value="Оформити кредит">
+                                    <a href="#">Я маю промокод</a>
+                                </div>
+                                <div class="calculatorSectionNBU">
+                                    Цей віджет не є кредитним калькулятором у розумінні постанови правління НБУ від
+                                    05.10.2021 №100 та відображає умови кредитування протягом пільгового періоду (до 30
+                                    днів). Повну інформацію про загальні умови кредитування дивіться тут, персональні -
+                                    в договорі.Джерело: <a href="https://kachay.com.ua/©">https://kachay.com.ua/©</a>
+                                    Кача гроші Кредит онлайн
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="mainSeoPage">
+        <div class="wrapper">
+            <section class="mainSeoPageSection1">
+                <h2>Кредит на картку</h2>
+                <div class="mainSeoPageSectionText" style="margin-bottom: 32px;">
+                    Багатьох цікавить питання: Акційний кредит від 0,01% на картку – це міф чи реальність? Розглянемо
+                    докладно, що це за «звір» – чи існує насправді «безвідсотковий кредит», чи це все вигадки
+                    маркетологів. Згідно з українським законодавством (і така норма діє не лише в нашій країні), видача
+                    кредитів під 0% заборонена, тому кредитні компанії пропонують клієнтам акційний кредит, який видають
+                    під мінімальну ставку – символічні 0,01% на день. При цьому, інші правила видачі нічим не
+                    відрізняються від звичайних позик із відсотками. Така акція дозволяє кредиторам залучати
+                    позичальників практично безкоштовними позиками.
+                </div>
+                <h2>Акційний кредит онлайн від 0,01%: де взяти</h2>
+                <div class="mainSeoPageSectionText">
+                    без відсотків активно рекламують банки та МФО. Але ж це різні послуги. Великі фінансові установи
+                    залучають клієнтів на великі суми і довгострокові програми кредитування. Оформляючи кредит у мільйон
+                    гривень, клієнт вже забезпечує банку гарний заробіток на комісіях за обслуговування, відкриття
+                    рахунку тощо.
+                    <br>
+                    <br>
+                    Мікрофінансові організації орієнтуються на людей, яким потрібні гроші до зарплати – до 15 тис.грн.
+                    на термін до 20 днів. Тут не змусять відкривати рахунок, тож захмарних комісій теж не буде. Для
+                    кредитних компаній важливо показати, що співпраця з ними – це проста, швидка, зрозуміла та безпечна
+                    процедура. Заради цього МФО в Україні жертвують прибутком за першу позику, віддаючи її без
+                    відсотків.
+                    <br>
+                    <br>
+                    Один із варіантів позики від 0,01% пропонує компанія «Качай Гроші». Новим клієнтам сервіс видає
+                    акційний кредит від 0,01% на день, онлайн на картку. Наша мета – залучення нових клієнтів, багато з
+                    яких звертається до нас знову і знову, щоб отримати кредит онлайн без відмови. Ми довіряємо своїм
+                    клієнтам та впевнені, що це допомагає вибудовувати чесні довгострокові партнерські відносини.
+                </div>
+            </section>
+
+            <section class="mainSeoPageSection1">
+                <h2>Акційна позика від 0,01% на картку: умови оформлення</h2>
+                <p style="margin-bottom: 32px;">В «Качай Гроші» оформити акційний кредит онлайн на картку може будь-який
+                    українець, який відповідає базовим вимогам МФО:</p>
+                <div class="WhatRequiredContainer" style="margin-bottom: 32px;">
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/WhatRequired1.png" alt="Наявність чинної банківської картки">
+                        </div>
+                        <h3>Наявність чинної банківської картки</h3>
+                    </div>
+
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/WhatRequired2.png" alt="Бути старше 18 років">
+                        </div>
+                        <h3>Бути старше 18 років</h3>
+                    </div>
+
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/WhatRequired3.png" alt="Паспорт та ІПН">
+                        </div>
+                        <h3>Паспорт та ІПН</h3>
+                    </div>
+
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/WhatRequired4.png" alt="ТНаявність телефону  і email">
+                        </div>
+                        <h3>Наявність <br> телефону і email</h3>
+                    </div>
+                </div>
+                <p style="margin-bottom: 32px;" class="lineSeo">Як бачите, нічого специфічного. Якщо ви підходите за
+                    перерахованими вище критеріями, при першому зверненні вам доступна мікропозика онлайн від 0,01% на
+                    день:</p>
+                <ul class="mainSeoPageList">
+                    <li>Взяти в борг можна від 1000 до 5 000 грн</li>
+                    <li>Термін кредитування – від 5 до 20 днів</li>
+                    <li>Процентна ставка становитиме 0,01% на добу</li>
+                </ul>
+                <p>Умови кредитування є абсолютно прозорими. Детальну інформацію про мікрокредит ви знайдете в договорі
+                    кредитування. А наша клієнтська підтримка проконсультує та допоможе розібратися з будь-якими
+                    питаннями: 097 369-41-11; 095 369-41-11; 063 369-41-11; 0 800 312-727.</p>
+            </section>
+
+            <section class="mainSeoPageSection1">
+                <h2>Як отримати акційний кредит від 0,01% онлайн на картку</h2>
+                <p style="margin-bottom: 32px;">“Качай Гроші” не вимагають від позичальника жодної додаткової
+                    інформації. Щоб узяти акційну позику від 0,01%, не доведеться пояснювати, навіщо знадобилися гроші.
+                    Все, що клієнту потрібно зробити, це виконати кілька простих дій:</p>
+                <div class="mainSeoPageBlock">
+                    <div class="mainSeoPageBlockLeft">
+                        <span>Крок:</span>
+                        <p class="gray">01</p>
+                    </div>
+                    <div class="mainSeoPageBlockRight">
+                        <h3>Вкажіть суму і термін</h3>
+                        <div>
+                            На кредитному калькуляторі оберіть бажану суму та термін кредиту. Після цього, натисніть
+                            кнопку “Оформити кредит”.
+                            Максимальна сума позики - 15 000 грн.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainSeoPageBlock">
+                    <div class="mainSeoPageBlockLeft">
+                        <span>Крок:</span>
+                        <p class="green">02</p>
+                    </div>
+                    <div class="mainSeoPageBlockRight">
+                        <h3>Заповніть заявку</h3>
+                        <div>
+                            Для оформлення першої позики Вам необхідно заповнити всі обов'язкові поля анкети. Якщо Ви
+                            вже користувалися нашим сервісом, тоді Вам необхідно
+                            лише увійти до особистого кабінету, вибрати суму та термін кредиту і натиснути кнопку
+                            «Оформити кредит» - система прийме рішення автоматично.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainSeoPageBlock">
+                    <div class="mainSeoPageBlockLeft">
+                        <span>Крок:</span>
+                        <p class="yellow">03</p>
+                    </div>
+                    <div class="mainSeoPageBlockRight">
+                        <h3>Верифікуйте картку</h3>
+                        <div>
+                            Верифікація картки - це процедура перевірки картки та її власника. Таким чином Ви
+                            підтверджуєте, що власник картки – це Ви, а не третя особа, яка намагається незаконно
+                            використати Вашу картку
+                            шахрайським шляхом. Якщо Ви подаєте заявку на повторний кредит, то у Вас є можливість
+                            використовувати верифіковану раніше картку, обравши її зі списку карт в особистому кабінеті.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainSeoPageBlock">
+                    <div class="mainSeoPageBlockLeft">
+                        <span>Крок:</span>
+                        <p class="blue">04</p>
+                    </div>
+                    <div class="mainSeoPageBlockRight">
+                        <h3>Отримання рішення по заявці та грошей на карту</h3>
+                        <div>
+                            Після отримання позитивного рішення Вам необхідно, в особистому кабінеті ознайомитися з
+                            Паспортом споживчого кредиту та умовами Кредитного договору, а також підтвердити свою згоду
+                            на підписання цих документів вказавши отриманий код з смс. Гроші надійдуть на Вашу картку
+                            протягом декількох хвилин.
+                        </div>
+                    </div>
+                </div>
+                <p>Грошима позичальник може розпоряджатися на власний розсуд: зняти готівку в будь-якому банкоматі або
+                    розраховуватися безготівково. Важливо, щоб до кінця закінчення договору ви змогли погасити кредит.
+                </p>
+            </section>
+
+            <section class="mainSeoPageSection1">
+                <h2>Хто може отримати відмову</h2>
+                <p>При зверненні по кредит завжди існує невелика ймовірність отримати відмову. З труднощами при
+                    оформленні швидкої акційної позики часто стикаються такі категорії позичальників:</p>
+                <div class="WhatRequiredContainer mainSeoPageWidth">
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/notCredit1.png" alt="З діючими кредитами в інших організаціях">
+                        </div>
+                        <h3>З діючими кредитами в інших організаціях</h3>
+                    </div>
+
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/notCredit2.png" alt="З простроченнями за кредитами в минулому">
+                        </div>
+                        <h3>З простроченнями за кредитами в минулому</h3>
+                    </div>
+
+                    <div class="WhatRequiredContainerSection">
+                        <div class="WhatRequiredContainerSectionImg">
+                            <img src="img/notCredit3.png" alt="З судимостями">
+                        </div>
+                        <h3>З судимостями</h3>
+                    </div>
+                </div>
+                <p>Але найпоширенішою причиною відмов залишаються безглузді помилки, які допускає позичальник під час
+                    заповнення анкети. Їх можна уникнути, якщо до процесу подання заявки на акційний кредит від 0,01% на
+                    день поставитися з належною увагою.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footerSeoPage">
+        <div class="footerTop">
+            <div class="wrapper">
+                <div class="footerLogo">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="footerTopSearch">
+                    <div class="footerTopSearchPositon">
+                        <input type="search" name="" id="" placeholder="Пошук">
+                        <input type="submit" class="submit" value="Пошук">
+                    </div>
+                </div>
+                <div class="footerTopContainer">
+                    <div class="footerTopContainerNavigation">
+                        <div class="footerTopContainerNavigationImg">
+                            <img src="img/footerTopContainerNavigationImg1.png" alt="Про нас">
+                        </div>
+                        <ul>
+                            <li class="footerNavBold">
+                                Про нас:
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакти</a>
+                            </li>
+                            <li>
+                                <a href="#">Умови користування</a>
+                            </li>
+                            <li>
+                                <a href="reviews.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Інформація про фінансову установу, яка підлягає оприлюдненню згідно з
+                                    законодавством</a>
+                            </li>
+                            <li>
+                                <a href="information.html">Додаткова інформація про фінансові послуги</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerTopContainerNavigation">
+                        <div class="footerTopContainerNavigationImg">
+                            <img src="img/footerTopContainerNavigationImg2.png" alt="Контакти">
+                        </div>
+                        <ul class="footerTopContainerNavigationContact">
+                            <li class="footerNavBold">
+                                Контакти:
+                            </li>
+                            <li>
+                                <a href="tel:097-369-41-11">097 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:095-369-41-11">095 369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:063-369-41-11">063-369-41-11</a>
+                            </li>
+                            <li>
+                                <a href="tel:800-312-727">0 800 312-727</a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@kachay.com.ua">info@kachay.com.ua</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerTopContainerNavigationFlex">
+                        <div class="footerTopContact">
+                            <div class="footerTopContactTime">
+                                <div class="footerTopContainerNavigationImg">
+                                    <img src="img/footerTopContainerNavigationImg3.png" alt="Час роботи">
+                                </div>
+                                <ul class="footerTopContainerNavigationTime">
+                                    <li class="footerNavBold">
+                                        Час роботи:
+                                    </li>
+                                    <li>
+                                        пн-пт: с 8:00 до 20:00
+                                    </li>
+                                    <li>
+                                        сб-нд: с 9:00 до 20:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footerTopContactSocial">
+                                <div class="footerTopContainerNavigationImg">
+                                    <img src="img/footerTopContainerNavigationImg5.png" alt="Ми в мережі:">
+                                </div>
+                                <p class="footerNavBold">Ми в мережі:</p>
+                                <ul class="footerTopContactSocialFlex">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Facebook.svg" alt="Facebook">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Instagram.svg" alt="Instagram">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/Subtract.svg" alt="Subtract">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerTopContactBtn">
+                            <button class="footerTopContactBtnAppeal">Залишити звернення</button>
+                            <button class="footerTopContactBtnChat">Онлайн чат</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerCenter">
+            <div class="wrapper">
+                <h3>Кращі пропозиції в компанії</h3>
+                <div class="footerCenterContainer">
+                    <ul>
+                        <li>
+                            <a href="#">Кредит без відмов</a>
+                        </li>
+                        <li>
+                            <a href="#">Безвідсотковий кредит</a>
+                        </li>
+                        <li>
+                            <a href="#">Гроші до зарплати</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит за 5 хвилин</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Гроші на картку терміново</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит з поганою кредитною історією</a>
+                        </li>
+                        <li>
+                            <a href="#">Позика онлайн на картку</a>
+                        </li>
+                        <li>
+                            <a href="#">Гроші в борг</a>
+                        </li>
+                    </ul>
+                    <ul class="footerCenterContainerMargin">
+                        <li>
+                            <a href="#">Міні позика</a>
+                        </li>
+                        <li>
+                            <a href="#">Мікропозики і мікрокредити онлайн на картку</a>
+                        </li>
+                        <li>
+                            <a href="#">Потребительский кредит</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит онлайн на картку цілодобово</a>
+                        </li>
+                        <li>
+                            <a href="#">Кредит безробітним</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="wrapper">
+                <p>ТОВ "КАЧАЙ ГРОШІ" 2016 - 2022 – Свідоцтво фінансової установи ФК №В0000479 від 31.12.2021 видане
+                    Національним Банком України</p>
+                <div class="footerBottomImg">
+                    <img src="img/footerBottomImg.png" alt="КАЧАЙ ГРОШІ">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="//code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="script/burger.js"></script>
+    <script src="script/calculator.js"></script>
+    <script src="script/select.js"></script>
+    <script src="script/bannerSlideer.js"></script>
+    <script src="script/reviewsSlideer.js"></script>
+    <script src="script/newsSlider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="script/scroll.js"></script>
+    <script src="script/paymentSchedule.js"></script>
+</body>
+
+</html>
