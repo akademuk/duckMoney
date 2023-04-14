@@ -521,6 +521,8 @@ input[type="range"]::-ms-track {
     font-weight: 700;
     font-size: 16px;
     line-height: 36px;
+    display: block;
+    margin: 16px auto 0 auto;
     display: flex;
     align-items: center;
     text-align: center;
@@ -2851,6 +2853,9 @@ select#purpose {
     color: #9D6FF3;
     margin-bottom: 34px;
 }
+.bannerSeoPageRight1 {
+    padding: 0 !important;
+}
 .bannerSeoPageRight h1 strong {
     font-weight: 700;
     font-size: 24px;
@@ -3123,9 +3128,18 @@ select#purpose {
 .bannerNone {
     position: inherit;
 }
-
-
-
+.SeoPageCalc1 {
+    padding: 0 50px 32px 50px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+.SeoPageCalc1 h2 {
+    width: 100%;
+}
+.calcOpen .calculatorSection {
+    padding: 16px 39px 32px 39px !important;
+    box-sizing: border-box;
+}
 
 
 
@@ -3337,6 +3351,20 @@ select#purpose {
     }
     .dialogPosition {
         left: 30%;
+    }
+    .bannerSliderWrapperRight {
+        margin-left: 10px !important;
+    }
+    .calculatorBtn input {
+        margin: 16px auto 0 auto;
+    }
+    .bannerSliderWrapperLeft {
+        width: 50%;
+    }
+    .bannerSliderWrapperRight  {
+        width: 40%;
+        margin-left: auto !important;
+        margin-right: 20px !important;
     }
 }
 
@@ -3589,6 +3617,15 @@ select#purpose {
     .calcOpen {
         top: 100px;
     }
+    .bannerSliderItemDialog {
+        left: 5%;
+    }
+    .calculatorBtn > input {
+        min-width: max-content;
+    }
+    .bannerSliderWrapperRight {
+        width: 70%;
+    }
 }
 
 /* //max-width: 991px */
@@ -3840,6 +3877,7 @@ select#purpose {
         height: 100px;
         top: 18px;
         padding: 9px;
+        left: 150px;
     }
 
     .bannerSliderWrapperLeft {
@@ -4489,6 +4527,13 @@ select#purpose {
     .bannerNoneLeft .dialogPosition {
         left: 120px;
         top: 20px;
+    }
+    .bannerSliderWrapperRight {
+        margin-left: 0px !important;
+    } 
+    .calculatorBtn input {
+        margin: 16px auto 0 auto;
+        display: block;
     }
 }
 
@@ -5165,6 +5210,19 @@ select#purpose {
     .mainSeoPageSection1 .WhatRequiredContainer .WhatRequiredContainerSection h3 {
         width: inherit;
     }
+    .SeoPageCalc1 {
+        padding: 0 4px 16px 4px;
+    }
+    .calculatorSectionNBU {
+        margin-top: 0;
+    }
+    .calcOpen .calculatorSection {
+        padding: 16px 4px 16px 4px !important;
+        box-sizing: border-box;
+    }
+    .calculatorBtn input {
+        width: 100%;
+    }
 }
 
 /* //max-width: 576px */
@@ -5173,7 +5231,7 @@ select#purpose {
     .calculatorBtn input {
         min-width: 100%;
     }
-
+    
     .bannerSliderWrapperLeft {
         width: 100%;
     }
