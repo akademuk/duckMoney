@@ -342,7 +342,9 @@ header .wrapper {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #000000;
-    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid #E6E6E6;
@@ -1878,6 +1880,8 @@ input[type="range"]::-ms-track {
 .calculatorAbout .calculatorSection {
     display: flex;
     flex-direction: row;
+    padding: 32px 50px !important;
+    box-sizing: border-box;
 }
 
 .calculatorSectionAvout {
@@ -2360,6 +2364,7 @@ select#purpose {
     font-size: 16px;
     line-height: 22px;
     color: #666666;
+    max-width: 801px;
 }
 
 .howToRepayPageTopContentSectionRight>a {
@@ -3140,6 +3145,9 @@ select#purpose {
     padding: 16px 39px 32px 39px !important;
     box-sizing: border-box;
 }
+.calculatorAbout .calculatorSectionNBU a {
+    font-size: 12px;
+}
 
 
 
@@ -3625,6 +3633,9 @@ select#purpose {
     }
     .bannerSliderWrapperRight {
         width: 70%;
+    }
+    .calculatorAbout .calculatorSection {
+        padding: 32px 16px !important;
     }
 }
 
@@ -4448,7 +4459,6 @@ select#purpose {
 
     .howGetPageCont img {
         margin-right: 0;
-        width: auto;
         height: auto;
     }
 
@@ -4543,7 +4553,6 @@ select#purpose {
     .hamburger p {
         font-size: 0;
     }
-
     .howGetPageText2 .loanOnlineContainerTextLeft {
         left: auto;
         right: 200px;
@@ -4877,7 +4886,7 @@ select#purpose {
     }
 
     .informationPageTop h2 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 20px;
         margin-bottom: 8px;
     }
@@ -5223,6 +5232,43 @@ select#purpose {
     .calculatorBtn input {
         width: 100%;
     }
+    .calculatorAbout .calculatorSection {
+        padding: 16px 4px !important;
+    } 
+    .menuTopLink2{
+        font-size: 14px;
+    }
+    .formSubmit {
+        height: 40px;
+        font-size: 14px;
+    }
+    .calculatorBtn input {
+        font-size: 14px;
+    }
+    .howGetPageCont {
+        background: #FFFFFF;
+        box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+        border-radius: 12px;
+        padding: 16px 8px;
+        box-sizing: border-box;
+    }
+    .howToRepayPageTopContentSectionRight>a {
+        height: 46px;
+        padding: 0;
+        width: 100%;
+    }
+    .newsContainerSection img {
+        height: 208px;
+    }
+    .informationPageTop span {
+        font-size: 14px;
+    }
+    .acivesLink {
+        background: #FFCE00 !important;
+        border-radius: 2px;
+        color: #000000 !important;
+        font-weight: 500 !important;
+    }
 }
 
 /* //max-width: 576px */
@@ -5285,6 +5331,20 @@ select#purpose {
     .aboutLoans .wrapper>a {
         min-width: 100%;
     }
+    .howGetPageCont img {
+        margin-right: 0;
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+    .howGetPageText .loanOnlineContainerTextLeft {
+        left: 188px;
+        top: -80px;
+    }
+    .howGetPageText2 .loanOnlineContainerTextLeft {
+        left: auto !important;
+        right: 184px;
+    }
 }
 
-/* //max-width: 400px */
+/* //max-width: 350px */
