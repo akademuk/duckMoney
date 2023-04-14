@@ -2445,6 +2445,49 @@ select#purpose {
 .displayNone {
     display: none;
 }
+.searchPageContainer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.searchPageText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.searchPageContainer > a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+.searchPpageSearch {
+    height: max-content !important;
+}
+.searchPpageSearch p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+}
+.searchPpageSearch .footerTopSearchPositon {
+    margin-bottom: 32px;
+}
+.searchPpageSearch > img {
+    margin-bottom: 32px;
+} 
+
+
+
 
 
 
@@ -2746,6 +2789,12 @@ select#purpose {
     .bannerAboutUsButtom {
         margin-top: 32px !important;
         margin-bottom: 32px !important;
+    }
+    .searchPageContainerLeft {
+        width: 50%;
+    }
+    .searchPpageSearch {
+        width: 50%;
     }
 }
 
@@ -3899,6 +3948,20 @@ select#purpose {
     }
     .displayNone {
         display: block;
+    }
+    .reviewsTop h2 {
+        margin-bottom: 16px;
+    }
+    .searchPageContainer h3 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+    .searchPageContainer {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #E6E6E6;
+        margin-bottom: 16px;
+        border-radius: 0;
     }
 }
 
