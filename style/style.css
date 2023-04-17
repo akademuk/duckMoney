@@ -120,7 +120,7 @@ button {
 }
 
 .menu.open {
-    transform: translateY(84px);
+    transform: translateY(54px);
     transition: transform 0.3s ease-in-out;
     z-index: 100;
 }
@@ -2017,6 +2017,7 @@ input[type="range"]::-ms-track {
     line-height: 22px;
     text-align: center;
     color: #000000;
+    max-width: 220px;
 }
 
 .informationPageDownloadLink {
@@ -2131,7 +2132,7 @@ input[type="range"]::-ms-track {
     padding: 10px 0px 10px 8px;
     width: 460px;
     height: 56px;
-    background: #F6F6F6;
+    background: #F5F1FE;
     border-radius: 12px;
     width: 100%;
     margin-top: 8px;
@@ -2143,7 +2144,14 @@ input[type="range"]::-ms-track {
     line-height: 24px;
     color: #333333;
 }
-
+.openNewsPageRight h2{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #000000;
+    text-align: left;
+}
 .contactPageContainerContactForm form label textarea {
     padding: 10px 0px 10px 8px;
     width: 460px;
@@ -2170,7 +2178,7 @@ input[type="range"]::-ms-track {
     box-sizing: border-box;
     border: none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #000000;
 }
@@ -3153,11 +3161,52 @@ select#purpose {
 .SeoPageCalc1 .calculatorSection {
     padding: 16px 0 !important;
 }
-
-
-
-
-
+.resultClose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.resultClose p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+.resultClose .btnClose {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #000000;
+    background: transparent;
+    border: none;
+}
+.resultClose .btnClose img {
+    margin-left: 8px;
+}
+#resultSumOpen {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    color: #333333;
+}
+.resultSumText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333 !important;
+}
+#resultDateOpen {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
 
 
 
@@ -3959,7 +4008,7 @@ select#purpose {
     }
 
     .WhatRequired {
-        padding: 0 0 64px 0;
+        padding: 64px 0 64px 0;
     }
 
     .whyKacha .wrapper h2 {
@@ -4569,6 +4618,16 @@ select#purpose {
         margin: 16px auto 0 auto;
         display: block;
     }
+    header {
+        height: 54px;
+    }
+    header .wrapper {
+        height: 100%;
+    }
+    .logotype a img {
+        height: 34px;
+        object-fit: contain;
+    }
 }
 
 /* //max-width: 767px */
@@ -4576,6 +4635,7 @@ select#purpose {
 @media(max-width: 576px) {
     .hamburger p {
         font-size: 0;
+        display: none;
     }
     .howGetPageText2 .loanOnlineContainerTextLeft {
         left: auto;
@@ -4758,6 +4818,8 @@ select#purpose {
 
     .informationPageTopContainer {
         margin-top: 16px;
+        padding: 0 34px;
+        box-sizing: border-box;
     }
 
     .informationPageTopGrafic {
@@ -4907,8 +4969,12 @@ select#purpose {
 
     .informationPageTopContainer .informationPageTopContainerSection {
         width: 100%;
-    }
+        padding-top: 16px;
 
+    }
+    .footerTopContact {
+        margin-bottom: 24px;
+    }
     .informationPageTop h2 {
         font-size: 20px;
         line-height: 20px;
@@ -4966,8 +5032,11 @@ select#purpose {
     }
 
     .footerTopContactSocialFlex {
-        max-width: 180px;
-        justify-content: space-between;
+        max-width: inherit;
+        justify-content: flex-start;
+    }
+    .footerTopContactSocialFlex li:nth-of-type(2) {
+        margin: 0 16px;
     }
 
     .footerTopContactBtn button {
@@ -5007,6 +5076,7 @@ select#purpose {
 
     .menuTopLink {
         height: 40px;
+        margin-top: 8px;
     }
 
     .menuTopLink a {
@@ -5018,8 +5088,8 @@ select#purpose {
     }
 
     .reviewsTop {
-        background: #FFFFFF;
-        box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+        background: transparent;
+        box-shadow: none;
         border-radius: 12px;
         padding: 16px 4px;
         box-sizing: border-box;
@@ -5072,11 +5142,15 @@ select#purpose {
 
     .reviewsTopContainer .pagination {
         display: block;
-        margin: 24px 0;
+        padding: 24px 0;
+        background: #fff;
+        box-shadow: 0px 20px 52px rgba(11, 25, 61, 0.05);
+        border-radius: 0 0 12px 12px;
     }
 
     .reviewsTopContainerLeft {
         height: 730px;
+        background: #fff;
     }
 
     .reviewsTopContainerRight {
@@ -5123,7 +5197,10 @@ select#purpose {
     }
 
     .reviewsTop h2 {
-        margin-bottom: 16px;
+        padding-bottom: 16px;
+        background: #fff;
+        border-radius: 12px 12px 0 0;
+        margin-bottom: 0;
     }
 
     .searchPageContainer h3 {
@@ -5292,6 +5369,26 @@ select#purpose {
         border-radius: 2px;
         color: #000000 !important;
         font-weight: 500 !important;
+    }
+    .menu-button-container {
+        border: none;
+    }
+    .menu-button, .menu-button::before, .menu-button::after {
+        width: 24px;
+        border-radius: 2px;
+    }
+    .informationPageDownloadText {
+        padding-bottom: 16px;
+    }
+    .menu-button::before {
+        background-color: transparent;
+        background: url(../img/lineBurger.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #menu-toggle:checked+.menu-button-container .menu-button::before {
+        background: transparent;
+        background-color: #000000;
     }
 }
 

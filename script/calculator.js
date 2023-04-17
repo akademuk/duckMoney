@@ -19,7 +19,9 @@ $(document).ready(function() {
     $('#result').find('.resultSum').eq(2).find('#resultDate').text(formattedDate);
     $('#result').find('.resultSum').eq(2).find('#resultSum').text(resultSum);
     $('#result').find('.resultSum').eq(2).find('#resultDateOpen').text(formattedDate);
-    $('#result').find('.resultSum').eq(2).find('#resultSumOpen').text(resultSum);    
+    $('#result').find('.resultSum').eq(2).find('#resultSumOpen').text(resultSum);  
+    $('#resultDateOpen').text(formattedDate);  
+    $('#resultSumOpen').text(resultSum + "грн."); 
   }
   
   
