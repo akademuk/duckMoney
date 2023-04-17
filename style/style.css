@@ -2119,6 +2119,7 @@ input[type="range"]::-ms-track {
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    
 }
 
 .contactPageContainerContactForm form label input::placeholder {
@@ -2695,7 +2696,12 @@ select#purpose {
     background: #FFFFFF;
     border-radius: 12px;
     box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
     border: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 .reviewsTopContainerRight form label input::placeholder {
@@ -2703,6 +2709,7 @@ select#purpose {
     font-size: 16px;
     line-height: 24px;
     color: #333333;
+    font-family: 'Nunito', sans-serif;
 }
 
 .reviewsTopContainerRight form label textarea {
@@ -2790,6 +2797,7 @@ select#purpose {
 }
 
 .inputText {
+    font-family: 'Nunito', sans-serif;
     margin-top: 16px;
     font-weight: 400;
     font-size: 12px;
@@ -5509,6 +5517,9 @@ select#purpose {
     }
     .newsContainerSection img {
         border-radius: 12px;
+    }
+    .newsPageTop .informationPageTopContainer .informationPageTopContainerSection {
+        border-bottom: 0;
     }
 }
 
