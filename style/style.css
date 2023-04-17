@@ -120,7 +120,7 @@ button {
 }
 
 .menu.open {
-    transform: translateY(54px);
+    transform: translateY(84px);
     transition: transform 0.3s ease-in-out;
     z-index: 100;
 }
@@ -2105,6 +2105,7 @@ input[type="range"]::-ms-track {
 }
 
 .contactPageContainerContactForm form label input {
+    font-family: 'Nunito', sans-serif;
     padding: 10px 0px 10px 8px;
     width: 460px;
     height: 56px;
@@ -2115,17 +2116,16 @@ input[type="range"]::-ms-track {
     box-sizing: border-box;
     border: none;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #333333;
 }
 
 .contactPageContainerContactForm form label input::placeholder {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
-    color: #999999;
+    color: #333333;
 }
 
 .contactPageContainerContactForm form label select {
@@ -2139,8 +2139,7 @@ input[type="range"]::-ms-track {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     border: none;
-    font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #333333;
 }
@@ -2163,10 +2162,11 @@ input[type="range"]::-ms-track {
     box-sizing: border-box;
     border: none;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #333333;
     resize: none;
+    font-family: 'Nunito', sans-serif;
 }
 
 .formSubmit {
@@ -2702,7 +2702,7 @@ select#purpose {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #999999;
+    color: #333333;
 }
 
 .reviewsTopContainerRight form label textarea {
@@ -2713,6 +2713,17 @@ select#purpose {
     border-radius: 12px;
     box-sizing: border-box;
     border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 7px;
+    font-family: 'Nunito', sans-serif;
+}
+.reviewsTopContainerRight form label textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    font-family: 'Nunito', sans-serif;
 }
 
 .reviewsTopContainer .pagination {
@@ -3207,6 +3218,96 @@ select#purpose {
     line-height: 19px;
     color: #333333;
 }
+.openNewsPageRight h2 {
+    margin-left: 15px;
+}
+.select2-search__field {
+    display: none;
+}
+.select2-container--default .select2-selection--single {
+    padding: 10px 8px;
+    height: 56px;
+    background: #F5F1FE;
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.select2-results {
+    width: 100% !important;
+}
+.select2-container {
+    width: 100% !important;
+    border: none;
+}
+.select2-selection__arrow {
+    background: url(../img/select.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 19px;
+    right: 15px;
+}
+.select2-results__option:hover {
+    background: #EBE2FD !important;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 15px 0;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333 !important;
+}
+.select2-container--default .select2-results__option--selected {
+    display: none;
+}
+.select2-selection__arrow b {
+    display: none;
+}
+.select2-container--open .select2-dropdown--below {
+    border-radius: 12px;
+    border: 0;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-radius: 12px;
+}
+.select2-container--default .select2-selection--single {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.select2-dropdown {
+    margin-top: 4px;
+    background: #F5F1FE;
+    border-radius: 12px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3712,7 +3813,9 @@ select#purpose {
         display: block;
         width: 100%;
     }
-
+    .menu.open {
+        transform: translateY(54px);
+    }
     .wrapper {
         padding: 0 16px;
     }
@@ -5149,7 +5252,7 @@ select#purpose {
     }
 
     .reviewsTopContainerLeft {
-        height: 730px;
+        height: 700px;
         background: #fff;
     }
 
@@ -5389,6 +5492,19 @@ select#purpose {
     #menu-toggle:checked+.menu-button-container .menu-button::before {
         background: transparent;
         background-color: #000000;
+    }
+    .newsPageTop {
+        background: transparent;
+        box-shadow: none;
+    }
+    .newsPageTop .informationPageTopContainer {
+        padding: 0;
+    }
+    .newsPageTop .informationPageTopContainer .newsContainerSection{
+        padding: 8px;
+    }
+    .newsContainerSection img {
+        border-radius: 12px;
     }
 }
 
