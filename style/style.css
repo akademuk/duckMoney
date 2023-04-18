@@ -1237,7 +1237,6 @@ input[type="range"]::-ms-track {
     height: 100%;
     overflow-x: hidden;
     width: 100%;
-    padding-right: 60px;
     box-sizing: border-box;
 }
 
@@ -1247,6 +1246,9 @@ input[type="range"]::-ms-track {
     line-height: 27px;
     color: #000000;
     margin-bottom: 24px;
+}
+.content {
+    padding-right: 48px;
 }
 
 .informationScrollText {
@@ -1264,7 +1266,6 @@ input[type="range"]::-ms-track {
     color: #000000;
     margin-bottom: 24px;
 }
-
 .aboutLoans {
     padding: 100px 0;
     background: url(../img/aboutLoans.png);
@@ -1631,13 +1632,35 @@ input[type="range"]::-ms-track {
 }
 
 #mCSB_1_scrollbar_vertical {
-    width: 2px !important;
     height: 100% !important;
-    background: #F6F6F6 !important;
     border-radius: 29px !important;
     overflow: visible;
+    background-image: linear-gradient(to right, transparent 0%, transparent 40%, #F6F6F6 49%, #F6F6F6 50%, transparent 60%, transparent 100%);
+    background-size: 24px 100%;
+    width: 24px;
 }
-
+#mCSB_2_scrollbar_vertical {
+    height: 100% !important;
+    border-radius: 29px !important;
+    overflow: visible;
+    background-image: linear-gradient(to right, transparent 0%, transparent 40%, #000 49%, #000 50%, transparent 60%, transparent 100%);
+    background-size: 24px 100%;
+    width: 24px;
+}
+.tabScroll #mCSB_1_scrollbar_vertical {
+    height: 100% !important;
+    border-radius: 29px !important;
+    overflow: visible;
+    background-image: linear-gradient(to right, transparent 0%, transparent 40%, #000 49%, #000 50%, transparent 60%, transparent 100%);
+    background-size: 24px 100%;
+    width: 24px;
+}
+.tabScroll #mCSB_1_dragger_vertical {
+    height: 25px !important;
+}
+#mCSB_2_dragger_vertical {
+    height: 25px !important;
+}
 .informationScroll {
     position: relative;
     overflow: hidden;
@@ -1645,12 +1668,7 @@ input[type="range"]::-ms-track {
     height: 100%;
 }
 
-.informationScroll .mCSB_scrollTools {
-    width: 10px;
-    height: 100%;
-    background: transparent;
-    right: 0;
-}
+
 
 .informationScroll .mCSB_dragger {
     position: absolute;
@@ -1663,6 +1681,7 @@ input[type="range"]::-ms-track {
     border-radius: 5px;
     z-index: 999;
 }
+
 
 .informationScroll .mCSB_dragger .mCSB_dragger_bar {
     display: none;
@@ -3297,7 +3316,6 @@ select#purpose {
     font-size: 20px;
     line-height: 24px;
 }
-
 
 
 
