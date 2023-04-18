@@ -1661,6 +1661,9 @@ input[type="range"]::-ms-track {
 #mCSB_2_dragger_vertical {
     height: 25px !important;
 }
+.informationScroll #mCSB_1_dragger_vertical {
+    height: 25px !important;
+}
 .informationScroll {
     position: relative;
     overflow: hidden;
